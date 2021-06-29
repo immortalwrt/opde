@@ -27,12 +27,12 @@ jobs:
           fetch-depth: "0"
       - name: pull docker image
         run: |
-          docker pull elonh/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
-          docker tag elonh/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }} elonh/opde:worker
+          docker pull immortalwrt/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
+          docker tag immortalwrt/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }} immortalwrt/opde:worker
           docker images
       - name: Download all logs
         run: |
-          docker run -v $PWD:/openwrt elonh/opde:worker sudo transfer ${{github.event.inputs.dataURL}} -o Logs.tar.gz
+          docker run -v $PWD:/openwrt immortalwrt/opde:worker sudo transfer ${{github.event.inputs.dataURL}} -o Logs.tar.gz
           sudo chown $(id -u -n):$(id -g -n) Logs.tar.gz
           sha256sum Logs.tar.gz
           tar -xzf Logs.tar.gz # extract openwrt dir
@@ -40,11 +40,11 @@ jobs:
         run: |
           declare -a list
           list=($(find ./openwrt -mindepth 1 -maxdepth 1))
-          docker run -v $PWD/openwrt:/openwrt elonh/opde:worker sudo chown opde:opde -R /openwrt
-          docker run -v $PWD/db:/db elonh/opde:worker sudo chown opde:opde -R /db
-          for i in ${list[@]};do cmd="docker run -v $PWD/$i:/openwrt -v $PWD/db:/db elonh/opde:worker opde extract /db ${{github.run_number}}"; echo $cmd; $cmd;done
+          docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:worker sudo chown opde:opde -R /openwrt
+          docker run -v $PWD/db:/db immortalwrt/opde:worker sudo chown opde:opde -R /db
+          for i in ${list[@]};do cmd="docker run -v $PWD/$i:/openwrt -v $PWD/db:/db immortalwrt/opde:worker opde extract /db ${{github.run_number}}"; echo $cmd; $cmd;done
       - name: Hugo fresh
-        run: docker run -v $PWD/db:/openwrt elonh/opde:worker hugo
+        run: docker run -v $PWD/db:/openwrt immortalwrt/opde:worker hugo
       - name: Fix premission
         run: |
           sudo chown $(id -u -n):$(id -g -n) -R $PWD/db

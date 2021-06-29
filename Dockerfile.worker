@@ -1,4 +1,4 @@
-FROM elonh/opde:sdk
+FROM immortalwrt/opde:sdk
 LABEL maintainer="Elon Huang <elonhhuang@gmail.com>"
 
 RUN opde patch

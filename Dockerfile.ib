@@ -1,4 +1,4 @@
-FROM elonh/opde:base
+FROM immortalwrt/opde:base
 LABEL maintainer="Elon Huang <elonhhuang@gmail.com>"
 
 ENV OPDE_MODE=IB

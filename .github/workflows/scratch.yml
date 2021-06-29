@@ -65,16 +65,16 @@ jobs:
           # TODO: verify target and subtarget is aliable
           push: true
           tags: |
-            elonh/opde:base-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
-          # elonh/opde:base-${{steps.var.outputs.dateDot}}
+            immortalwrt/opde:base-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
+          # immortalwrt/opde:base-${{steps.var.outputs.dateDot}}
       - name: set default docker tag
         run: |-
-          docker pull elonh/opde:base-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
-          docker tag elonh/opde:base-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }} elonh/opde:base
+          docker pull immortalwrt/opde:base-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
+          docker tag immortalwrt/opde:base-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }} immortalwrt/opde:base
           docker images
       - name: push default docker tag
         if: ${{ github.event.inputs.target == 'x86' || github.event.inputs.subtarget == '64'}}
-        run: docker push elonh/opde:base
+        run: docker push immortalwrt/opde:base
       - name: Invoke Base workflow
         if: ${{ github.event.inputs.subsequent == '1' || github.event_name == 'schedule'}}
         uses: benc-uk/workflow-dispatch@master

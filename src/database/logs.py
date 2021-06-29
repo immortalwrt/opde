@@ -152,8 +152,8 @@ build number: `%s`
 #### re-implement command 
 
 ```bash
-docker pull elonh/opde:sdk
-docker run -it --rm elonh/opde:sdk zsh # or bash
+docker pull immortalwrt/opde:sdk
+docker run -it --rm immortalwrt/opde:sdk zsh # or bash
 export http_proxy= # [your proxy], do not use localhost or 127.0.0.1
 export https_proxy=$http_proxy
 opde feeds && opde config -a

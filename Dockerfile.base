@@ -30,7 +30,7 @@ RUN apt-get update -y &&\
 ARG USER_ID=1000
 ARG GROUP_ID=1000
 RUN groupadd -g ${GROUP_ID} opde &&\
-	useradd -c "OpenWrt Builder" -l -m -d /home/opde -u ${USER_ID} -g opde -G sudo -s /bin/bash opde &&\
+	useradd -c "EmortalWrt Build Bot" -l -m -d /home/opde -u ${USER_ID} -g opde -G sudo -s /bin/bash opde &&\
 	echo '%opde ALL=(ALL) NOPASSWD:ALL' >> /etc/sudoers &&\
 	install -d -m 0754 -o opde -g opde /openwrt
 
