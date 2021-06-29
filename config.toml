@@ -1,4 +1,4 @@
-baseURL = "https://elonh.github.io/opde"
+baseURL = "https://immortalwrt.github.io/opde"
 publishDir = "docs"
 
 languageCode = "en-us"
@@ -17,7 +17,7 @@ enableMissingTranslationPlaceholders = false
 
     # Source Code repository section
     # description = "put your description"
-    github_repository = "https://github.com/elonh/opde"
+    github_repository = "https://github.com/immortalwrt/opde"
     # version = "0.9.6"
 
     # Documentation repository section
