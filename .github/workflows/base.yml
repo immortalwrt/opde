@@ -239,7 +239,7 @@ jobs:
         uses: benc-uk/workflow-dispatch@v1
         with:
           workflow: Worker
-          token: ${{ secrets.PERSONAL_TOKEN }}
+          token: ${{ secrets.BOT_PERSONAL_TOKEN }}
           inputs: '{ "subsequent": "1", "packages00URL": "${{steps.Packages-00-web.outputs.LINK}}", "target": "${{ github.event.inputs.target }}", "subtarget": "${{ github.event.inputs.subtarget }}", "onedrive": "${{ github.event.inputs.onedrive }}"}'
       - name: Upload to OneDrive for ImmortalWRT
         if: ${{ github.event.inputs.onedrive == '1' }}
