@@ -2,13 +2,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ath79 on Opde Issues Tracker</title>
-    <link>https://elonh.github.io/opde/ath79/</link>
+    <link>https://immortalwrt.github.io/opde/ath79/</link>
     <description>Recent content in ath79 on Opde Issues Tracker</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 22 Jun 2021 10:51:50 +0000</lastBuildDate>
     
-	<atom:link href="https://elonh.github.io/opde/ath79/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://immortalwrt.github.io/opde/ath79/index.xml" rel="self" type="application/rss+xml" />
     
     
   </channel>
