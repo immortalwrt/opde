@@ -10683,6 +10683,166 @@
   </url>
   
   <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_ath10k-ct/regular/compile.4/</loc>
+    <lastmod>2021-07-01T08:54:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_fullconenat/compile.4/</loc>
+    <lastmod>2021-07-01T08:54:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_coova-chilli/compile.4/</loc>
+    <lastmod>2021-07-01T08:53:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_xtables-addons/compile.4/</loc>
+    <lastmod>2021-07-01T08:53:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_mosdns/compile.4/</loc>
+    <lastmod>2021-07-01T08:49:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_node-ejdb2_node/compile.4/</loc>
+    <lastmod>2021-07-01T08:49:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_idevicerestore/compile.4/</loc>
+    <lastmod>2021-07-01T08:46:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_node-ffi-napi/compile.4/</loc>
+    <lastmod>2021-07-01T08:45:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_fast-classifier/compile.4/</loc>
+    <lastmod>2021-07-01T08:44:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_shortcut-fe/compile.4/</loc>
+    <lastmod>2021-07-01T08:44:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_pcap-dnsproxy/compile.4/</loc>
+    <lastmod>2021-07-01T08:44:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_openvswitch/compile.4/</loc>
+    <lastmod>2021-07-01T08:42:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_ovn/compile.4/</loc>
+    <lastmod>2021-07-01T08:42:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_jool/compile.4/</loc>
+    <lastmod>2021-07-01T08:39:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_mac80211/compile.4/</loc>
+    <lastmod>2021-07-01T08:38:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_ffmpeg/custom/compile.4/</loc>
+    <lastmod>2021-07-01T08:38:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_seafile-seahub/compile.4/</loc>
+    <lastmod>2021-07-01T08:38:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_telephony_rtpengine/no-transcode/compile.4/</loc>
+    <lastmod>2021-07-01T08:38:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_telephony_rtpengine/transcode/compile.4/</loc>
+    <lastmod>2021-07-01T08:38:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_ath10k-ct/smallbuffers/compile.4/</loc>
+    <lastmod>2021-07-01T08:37:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_mt76/compile.4/</loc>
+    <lastmod>2021-07-01T08:37:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_rtl8188eu/compile.4/</loc>
+    <lastmod>2021-07-01T08:37:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_rtl8192du/compile.4/</loc>
+    <lastmod>2021-07-01T08:37:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_rtl8812au-ac/compile.4/</loc>
+    <lastmod>2021-07-01T08:37:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_rtl8812au-ct/compile.4/</loc>
+    <lastmod>2021-07-01T08:37:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_rtl8821cu/compile.4/</loc>
+    <lastmod>2021-07-01T08:37:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_rtl88x2bu/compile.4/</loc>
+    <lastmod>2021-07-01T08:37:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_routing_batman-adv/compile.4/</loc>
+    <lastmod>2021-07-01T08:37:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_telephony_dahdi-linux/compile.4/</loc>
+    <lastmod>2021-07-01T08:36:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_telephony_dahdi-tools/compile.4/</loc>
+    <lastmod>2021-07-01T08:36:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_telephony_libpri/compile.4/</loc>
+    <lastmod>2021-07-01T08:36:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_ksmbd/compile.4/</loc>
+    <lastmod>2021-07-01T08:36:22+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_base_ath10k-ct/regular/compile.3/</loc>
     <lastmod>2021-06-30T21:10:43+00:00</lastmod>
   </url>
@@ -11073,12 +11233,192 @@
   </url>
   
   <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2710/</loc>
-    <lastmod>2021-06-30T21:10:43+00:00</lastmod>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/</loc>
+    <lastmod>2021-07-01T08:54:07+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://immortalwrt.github.io/opde/bcm27xx/</loc>
+    <lastmod>2021-07-01T08:54:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_ath10k-ct/</loc>
+    <lastmod>2021-07-01T08:54:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_fullconenat/</loc>
+    <lastmod>2021-07-01T08:54:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_ath10k-ct/regular/</loc>
+    <lastmod>2021-07-01T08:54:07+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_coova-chilli/</loc>
+    <lastmod>2021-07-01T08:53:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_xtables-addons/</loc>
+    <lastmod>2021-07-01T08:53:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_mosdns/</loc>
+    <lastmod>2021-07-01T08:49:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_node-ejdb2_node/</loc>
+    <lastmod>2021-07-01T08:49:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_idevicerestore/</loc>
+    <lastmod>2021-07-01T08:46:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_node-ffi-napi/</loc>
+    <lastmod>2021-07-01T08:45:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_fast-classifier/</loc>
+    <lastmod>2021-07-01T08:44:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_shortcut-fe/</loc>
+    <lastmod>2021-07-01T08:44:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_pcap-dnsproxy/</loc>
+    <lastmod>2021-07-01T08:44:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_openvswitch/</loc>
+    <lastmod>2021-07-01T08:42:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_ovn/</loc>
+    <lastmod>2021-07-01T08:42:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_jool/</loc>
+    <lastmod>2021-07-01T08:39:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_ffmpeg/custom/</loc>
+    <lastmod>2021-07-01T08:38:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_telephony_rtpengine/no-transcode/</loc>
+    <lastmod>2021-07-01T08:38:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_mac80211/</loc>
+    <lastmod>2021-07-01T08:38:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_ffmpeg/</loc>
+    <lastmod>2021-07-01T08:38:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_seafile-seahub/</loc>
+    <lastmod>2021-07-01T08:38:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_telephony_rtpengine/</loc>
+    <lastmod>2021-07-01T08:38:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_telephony_rtpengine/transcode/</loc>
+    <lastmod>2021-07-01T08:38:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_mt76/</loc>
+    <lastmod>2021-07-01T08:37:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_rtl8188eu/</loc>
+    <lastmod>2021-07-01T08:37:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_rtl8192du/</loc>
+    <lastmod>2021-07-01T08:37:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_rtl8812au-ac/</loc>
+    <lastmod>2021-07-01T08:37:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_rtl8812au-ct/</loc>
+    <lastmod>2021-07-01T08:37:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_rtl8821cu/</loc>
+    <lastmod>2021-07-01T08:37:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_rtl88x2bu/</loc>
+    <lastmod>2021-07-01T08:37:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_routing_batman-adv/</loc>
+    <lastmod>2021-07-01T08:37:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_ath10k-ct/smallbuffers/</loc>
+    <lastmod>2021-07-01T08:37:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_telephony_dahdi-linux/</loc>
+    <lastmod>2021-07-01T08:36:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_telephony_dahdi-tools/</loc>
+    <lastmod>2021-07-01T08:36:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_telephony_libpri/</loc>
+    <lastmod>2021-07-01T08:36:57+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_ksmbd/</loc>
+    <lastmod>2021-07-01T08:36:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2710/</loc>
     <lastmod>2021-06-30T21:10:43+00:00</lastmod>
   </url>
   
@@ -11508,22 +11848,7 @@
   </url>
   
   <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/</loc>
-    <lastmod>2021-06-29T09:40:48+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_libgd/full/</loc>
-    <lastmod>2021-06-29T09:40:48+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_ath10k-ct/</loc>
-    <lastmod>2021-06-29T09:40:48+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_fullconenat/</loc>
     <lastmod>2021-06-29T09:40:48+00:00</lastmod>
   </url>
   
@@ -11574,11 +11899,6 @@
   
   <url>
     <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_zstd/</loc>
-    <lastmod>2021-06-29T09:40:48+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_ath10k-ct/regular/</loc>
     <lastmod>2021-06-29T09:40:48+00:00</lastmod>
   </url>
   
@@ -11693,16 +12013,6 @@
   </url>
   
   <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_openvswitch/</loc>
-    <lastmod>2021-06-29T09:38:24+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_ovn/</loc>
-    <lastmod>2021-06-29T09:38:24+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_pixman/</loc>
     <lastmod>2021-06-29T09:38:24+00:00</lastmod>
   </url>
@@ -11793,22 +12103,7 @@
   </url>
   
   <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_fast-classifier/</loc>
-    <lastmod>2021-06-29T09:34:13+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_shortcut-fe/</loc>
-    <lastmod>2021-06-29T09:34:13+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_gst1-libav/</loc>
-    <lastmod>2021-06-29T09:34:13+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_jool/</loc>
     <lastmod>2021-06-29T09:34:13+00:00</lastmod>
   </url>
   
@@ -11853,11 +12148,6 @@
   </url>
   
   <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_mac80211/</loc>
-    <lastmod>2021-06-29T09:32:34+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_conmon/</loc>
     <lastmod>2021-06-29T09:32:34+00:00</lastmod>
   </url>
@@ -11898,11 +12188,6 @@
   </url>
   
   <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_ffmpeg/custom/</loc>
-    <lastmod>2021-06-29T09:31:48+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_mpd/full/</loc>
     <lastmod>2021-06-29T09:31:48+00:00</lastmod>
   </url>
@@ -11914,11 +12199,6 @@
   
   <url>
     <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_elektra/</loc>
-    <lastmod>2021-06-29T09:31:48+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_ffmpeg/</loc>
     <lastmod>2021-06-29T09:31:48+00:00</lastmod>
   </url>
   
@@ -11993,21 +12273,6 @@
   </url>
   
   <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_coova-chilli/</loc>
-    <lastmod>2021-06-29T09:30:18+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_node-ejdb2_node/</loc>
-    <lastmod>2021-06-29T09:30:18+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_xtables-addons/</loc>
-    <lastmod>2021-06-29T09:30:18+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_syslog-ng/</loc>
     <lastmod>2021-06-29T09:29:44+00:00</lastmod>
   </url>
@@ -12018,22 +12283,7 @@
   </url>
   
   <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_node-ffi-napi/</loc>
-    <lastmod>2021-06-29T09:29:13+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_telephony_rtpengine/no-transcode/</loc>
-    <lastmod>2021-06-29T09:28:26+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_perl-mail-spamassassin/nossl/</loc>
-    <lastmod>2021-06-29T09:28:26+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_idevicerestore/</loc>
     <lastmod>2021-06-29T09:28:26+00:00</lastmod>
   </url>
   
@@ -12068,17 +12318,7 @@
   </url>
   
   <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_telephony_rtpengine/</loc>
-    <lastmod>2021-06-29T09:28:26+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_perl-mail-spamassassin/ssl/</loc>
-    <lastmod>2021-06-29T09:28:26+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_telephony_rtpengine/transcode/</loc>
     <lastmod>2021-06-29T09:28:26+00:00</lastmod>
   </url>
   
@@ -12108,11 +12348,6 @@
   </url>
   
   <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_seafile-seahub/</loc>
-    <lastmod>2021-06-29T09:27:20+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_seafile-server/</loc>
     <lastmod>2021-06-29T09:27:20+00:00</lastmod>
   </url>
@@ -12124,11 +12359,6 @@
   
   <url>
     <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_knot-resolver/</loc>
-    <lastmod>2021-06-29T09:26:41+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_ksmbd/</loc>
     <lastmod>2021-06-29T09:26:41+00:00</lastmod>
   </url>
   
@@ -12145,11 +12375,6 @@
   <url>
     <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_php7-pecl-redis/</loc>
     <lastmod>2021-06-29T09:26:41+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_pcap-dnsproxy/</loc>
-    <lastmod>2021-06-29T09:25:37+00:00</lastmod>
   </url>
   
   <url>
@@ -12198,72 +12423,12 @@
   </url>
   
   <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_mt76/</loc>
-    <lastmod>2021-06-29T09:24:23+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_rtl8188eu/</loc>
-    <lastmod>2021-06-29T09:24:23+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_rtl8192du/</loc>
-    <lastmod>2021-06-29T09:24:23+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_rtl8812au-ac/</loc>
-    <lastmod>2021-06-29T09:24:23+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_rtl8812au-ct/</loc>
-    <lastmod>2021-06-29T09:24:23+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_rtl8821cu/</loc>
-    <lastmod>2021-06-29T09:24:23+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_rtl88x2bu/</loc>
-    <lastmod>2021-06-29T09:24:23+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_lcdringer/</loc>
     <lastmod>2021-06-29T09:24:23+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_loudmouth/</loc>
-    <lastmod>2021-06-29T09:24:23+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_routing_batman-adv/</loc>
-    <lastmod>2021-06-29T09:24:23+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_telephony_dahdi-linux/</loc>
-    <lastmod>2021-06-29T09:24:23+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_telephony_dahdi-tools/</loc>
-    <lastmod>2021-06-29T09:24:23+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_telephony_libpri/</loc>
-    <lastmod>2021-06-29T09:24:23+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_base_ath10k-ct/smallbuffers/</loc>
     <lastmod>2021-06-29T09:24:23+00:00</lastmod>
   </url>
   
