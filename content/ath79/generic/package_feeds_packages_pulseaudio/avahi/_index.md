@@ -1,6 +1,6 @@
 ---
 title: "avahi"
-date: 2021-06-22 10:42:16.491396
+date: 2021-07-01 16:48:03.261920
 hidden: false
 draft: false
 ---

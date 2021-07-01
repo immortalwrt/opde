@@ -1,6 +1,6 @@
 ---
 title: "full"
-date: 2021-06-22 10:51:10.650212
+date: 2021-07-01 17:06:20.977503
 hidden: false
 draft: false
 ---
