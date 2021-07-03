@@ -1,6 +1,6 @@
 ---
 title: "cortexa7"
-date: 2021-06-21 06:15:36.326519
+date: 2021-07-03 14:57:06.759558
 hidden: false
 draft: false
 ---
