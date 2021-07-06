@@ -85,6 +85,43 @@ class LogsDb(tinydb.TinyDB):
             (Item['exit-code'] != 0))
         )
 
+    def compress(self):
+        'bundle some items which has same arch and board together to reduce database file'
+        Item = tinydb.Query()
+        groups = {}
+        removedIDs = []
+        # clean exit-code != 0
+        # for doc in self.search(Item['exit-code'] != 0):
+        #     removedIDs.append(doc.doc_id)
+        #     pass
+        for doc in self.search(Item['exit-code'] == 0):
+            removedIDs.append(doc.doc_id)
+            idGroup = [doc['arch'], doc['board'], doc['subdir'],
+                       doc['target'], doc['build-type'], doc['build-variant']]
+            idGroup = str(idGroup)
+            if groups.get(idGroup) == None:
+                groups[idGroup] = dict(doc)
+                groups[idGroup]['count'] = 1
+                groups[idGroup]['run-number'] = 0
+                groups[idGroup]['detail'] = None
+                pass
+            else:
+                groups[idGroup]['count'] += 1
+                groups[idGroup]['user-time'] += doc['user-time']
+                groups[idGroup]['system-time'] += doc['system-time']
+                groups[idGroup]['time'] += doc['time']
+                pass
+            pass
+        self.remove(doc_ids=removedIDs)
+        for key, val in groups.items():
+            val['user-time'] /= val['count']
+            val['system-time'] /= val['count']
+            val['time'] /= val['count']
+            del val['count']
+            pass
+        self.insert_multiple(groups[key] for key in groups)
+        pass
+
     def transform_and_exit(self):
         'transform to hugo contents and close database for reducing db size'
         Item = tinydb.Query()
@@ -129,6 +166,7 @@ draft: false
                 self._build_hugo_content(doc))
 
         self.update({'detail': None})
+        self.compress()
         self.close()
 
     def _build_hugo_content(self, doc) -> str:
