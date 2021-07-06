@@ -205,10 +205,12 @@ def build(ctx):
 
 
 @cli.command(hidden=True)
+@click.option('-c', '--compress-database', 'compress',
+              is_flag=True, default=False, help='need to compress database')
 @click.argument('db-dir', type=click.Path(file_okay=False, dir_okay=True))
 @click.argument('run-number', type=click.INT)
 @click.pass_context
-def extract(ctx, db_dir: str, run_number: int):
+def extract(ctx, db_dir: str, run_number: int, compress: bool):
     'Extract build information from logs'
     setting: OpdeSetting = ctx.obj['set']
     extor = extractor.LogsExtractor(setting.openwrt_dir.joinpath('logs'))
@@ -222,7 +224,7 @@ def extract(ctx, db_dir: str, run_number: int):
         item = database.LogsDb.merge(
             logAst, *setting.targets, run_number=run_number)
         db.insert(item)
-    db.transform_and_exit()
+    db.transform_and_exit(compress)
 
 
 @cli.command(hidden=True)

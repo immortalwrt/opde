@@ -40,9 +40,13 @@ jobs:
         run: |
           declare -a list
           list=($(find ./openwrt -mindepth 1 -maxdepth 1))
+          db_size=$(stat -c%s "$PWD/db/logs.db.json")
+          echo "database size: ${db_size} bytes"
+          compress_flag=""
+          (( db_size > 31457280)) && compress_flag="-c" # compress if database greater than 30MB
           docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:worker sudo chown opde:opde -R /openwrt
           docker run -v $PWD/db:/db immortalwrt/opde:worker sudo chown opde:opde -R /db
-          for i in ${list[@]};do cmd="docker run -v $PWD/$i:/openwrt -v $PWD/db:/db immortalwrt/opde:worker opde extract /db ${{github.run_number}}"; echo $cmd; $cmd;done
+          for i in ${list[@]};do cmd="docker run -v $PWD/$i:/openwrt -v $PWD/db:/db immortalwrt/opde:worker opde extract $compress_flag /db ${{github.run_number}}"; echo $cmd; $cmd;done
       - name: Hugo fresh
         run: docker run -v $PWD/db:/openwrt immortalwrt/opde:worker hugo
       - name: Fix premission

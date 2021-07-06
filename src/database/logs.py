@@ -122,7 +122,7 @@ class LogsDb(tinydb.TinyDB):
         self.insert_multiple(groups[key] for key in groups)
         pass
 
-    def transform_and_exit(self):
+    def transform_and_exit(self, compress: bool = False):
         'transform to hugo contents and close database for reducing db size'
         Item = tinydb.Query()
         for doc in self.search(Item['exit-code'] != 0):
@@ -166,7 +166,8 @@ draft: false
                 self._build_hugo_content(doc))
 
         self.update({'detail': None})
-        self.compress()
+        if(compress):
+            self.compress()
         self.close()
 
     def _build_hugo_content(self, doc) -> str:
