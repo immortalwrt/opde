@@ -236,6 +236,11 @@ jobs:
         run: docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:worker opde reindex
       - name: Fix premission
         run: sudo chown $(id -u -n):$(id -g -n) -R openwrt
+      - name: show public key (debug)
+        run: |
+          cat openwrt/build-key.pub
+          cat openwrt/bin/targets/x86/64/packages/Packages.sig
+          cat openwrt/bin/packages/x86_64/base/Packages.sig
       - uses: actions/upload-artifact@v2
         with:
           name: Packages
