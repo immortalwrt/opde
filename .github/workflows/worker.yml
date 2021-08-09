@@ -235,7 +235,9 @@ jobs:
       - name: Opde build
         run: docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:worker opde reindex
       - name: show public key
-        run: for i in $(find openwrt/bin -name 'Packages.sig'); do echo "$i"; cat "$i"; done
+        run: |
+          wc -c openwrt/key-build openwrt/key-build.pub
+          for i in $(find openwrt/bin -name 'Packages.sig'); do echo "$i"; cat "$i"; done
       #- name: debug
       #  uses: mxschmitt/action-tmate@v3
       #  if: always()
