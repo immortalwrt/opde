@@ -387,18 +387,8 @@ def reindex(ctx):
     if ctx.obj['dry']:
         print('Build Done')
         return
-    private_key = setting.openwrt_dir.joinpath("key-build")
-    private_cont = ""
-    public_key = setting.openwrt_dir.joinpath("key-build.pub")
-    public_cont = ""
-    if private_key.exists() and public_key.exists():
-        private_cont = private_key.read_text()
-        public_cont = public_key.read_text()
     bash.run('make -j%s package/base-files/compile' % os.cpu_count(),
              cwd=setting.openwrt_dir.as_posix())
-    if private_key.exists() and public_key.exists():
-        private_key.write_text(private_cont)
-        public_key.write_text(public_cont)
     bash.run('make -j%s package/index V=s' % os.cpu_count(),
              cwd=setting.openwrt_dir.as_posix())
 
