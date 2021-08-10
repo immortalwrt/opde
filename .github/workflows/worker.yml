@@ -220,8 +220,8 @@ jobs:
           BUILD_KEY: ${{secrets.BUILD_KEY_PRIVATE}}
           BUILD_KEY_PUBLIC: ${{secrets.BUILD_KEY_PUBLIC}}
         run: |
-          echo -e "$BUILD_KEY" > openwrt/build-key
-          echo -e "$BUILD_KEY_PUBLIC" > openwrt/build-key.pub
+          echo -e "$BUILD_KEY" > openwrt/key-build
+          echo -e "$BUILD_KEY_PUBLIC" > openwrt/key-build.pub
           wc -c openwrt/key-build openwrt/key-build.pub
       - name: Copy SDK
         run: |
