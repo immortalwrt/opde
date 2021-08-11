@@ -235,14 +235,14 @@ jobs:
         run: docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:worker opde download
       - name: Opde build
         run: docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:worker opde reindex
+      - name: Fix premission
+        run: sudo chown $(id -u -n):$(id -g -n) -R openwrt
       - name: show public key
         run: |
           for i in $(find openwrt/bin -name 'Packages.sig'); do echo "$i"; cat "$i"; done
       #- name: debug
       #  uses: mxschmitt/action-tmate@v3
       #  if: always()
-      - name: Fix premission
-        run: sudo chown $(id -u -n):$(id -g -n) -R openwrt
       - uses: actions/upload-artifact@v2
         with:
           name: Packages
