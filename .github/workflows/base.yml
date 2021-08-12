@@ -78,18 +78,23 @@ jobs:
         run: docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:base opde download
       - name: Opde build
         run: docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:base opde build
-      - name: Bundle Artifacts
+      - name: Bundle Logs
         run: |
           docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:base tar -czvf opde.tar.gz logs .opde
-          docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:base tar -czvf bin.tar.gz bin
       - name: Fix premission
-        run: sudo chown $(id -u -n):$(id -g -n) -R opde.tar.gz logs bin .opde
+        run: sudo chown $(id -u -n):$(id -g -n) -R opde.tar.gz
         working-directory: openwrt
-      - name: Upload Artifacts
+      - name: Upload Logs
         uses: actions/upload-artifact@v2
         with:
           name: Base
           path: ./openwrt/opde.tar.gz
+      - name: Bundle Artifacts
+        run: |
+          docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:base tar -czvf bin.tar.gz bin
+      - name: Fix premission
+        run: sudo chown $(id -u -n):$(id -g -n) -R logs bin .opde
+        working-directory: openwrt
       #- name: Opde check
       #  run: docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:base opde check .opde/db ${{github.run_number}}
       - id: sdk-var2
