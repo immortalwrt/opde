@@ -69,12 +69,12 @@ jobs:
           # TODO: verify target and subtarget is aliable
           push: true
           tags: |
-            immortalwrt/opde:base-${{ github.event.inputs.branch }}-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
+            immortalwrt/opde:base-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }}
       - name: set default docker tag
         run: |-
-          docker pull immortalwrt/opde:base-${{ github.event.inputs.branch }}-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
-          docker tag immortalwrt/opde:base-${{ github.event.inputs.branch }}-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }} immortalwrt/opde:base
-          docker tag immortalwrt/opde:base-${{ github.event.inputs.branch }}-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }} immortalwrt/opde:base-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
+          docker pull immortalwrt/opde:base-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }}
+          docker tag immortalwrt/opde:base-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }} immortalwrt/opde:base
+          docker tag immortalwrt/opde:base-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }} immortalwrt/opde:base-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
           docker images
       - name: push default docker tag1
         if: ${{ github.event.inputs.target == 'x86' && github.event.inputs.subtarget == '64' && github.event.inputs.branch == 'master' }}
