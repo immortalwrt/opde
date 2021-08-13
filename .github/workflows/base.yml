@@ -4,23 +4,27 @@ on:
   workflow_dispatch:
     inputs:
       boostrap:
-        description: "Generate boostrap assignment(Value: 0, 1)"
+        description: "First Time Run(0,1)"
         required: false
         default: "0"
+      branch:
+        description: "Source branch(master,openwrt-18.06,...)"
+        required: false
+        default: "master"
       target:
-        description: "OpenWRT Target System(Value: x86, bcm27xx, ...)"
+        description: "Target(x86,bcm27xx,...)"
         required: false
         default: "x86"
       subtarget:
-        description: "OpenWRT Subtarget(Value: 64, bcm2711, ...)"
+        description: "Subtarget(64,bcm2711,...)"
         required: false
         default: "64"
       onedrive:
-        description: "upload to onedrive(Value: 0, 1)"
+        description: "upload to onedrive(0,1)"
         required: false
         default: "0"
       subsequent:
-        description: "trigger subsequent workflow after build success(Value: 0, 1)"
+        description: "run subsequent workflow(0,1)"
         required: false
         default: "0"
 jobs:
@@ -58,8 +62,8 @@ jobs:
           path: ./db
       - name: pull docker image
         run: |-
-          docker pull immortalwrt/opde:base-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
-          docker tag immortalwrt/opde:base-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }} immortalwrt/opde:base
+          docker pull immortalwrt/opde:base-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }}
+          docker tag immortalwrt/opde:base-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }} immortalwrt/opde:base
           docker images
       - name: Fix premission
         run: |
@@ -166,7 +170,7 @@ jobs:
           tar -xf ${{steps.sdk-var2.outputs.IB_NAME}}
           ls -l -h
       - name: hack docker file
-        run: sed -i 's,FROM immortalwrt/opde:base,FROM immortalwrt/opde:base-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }},' Dockerfile.sdk
+        run: sed -i 's,FROM immortalwrt/opde:base,FROM immortalwrt/opde:base-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }},' Dockerfile.sdk
       - name: Build and push sdk
         uses: docker/build-push-action@v2
         with:
@@ -177,15 +181,19 @@ jobs:
             SDK_PATH=./${{steps.sdk-var2.outputs.SDK_NAME_NO_PREFIX}}
           push: true
           tags: |
-            immortalwrt/opde:sdk-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
+            immortalwrt/opde:sdk-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }}
       - name: set default docker tag
         run: |-
-          docker pull immortalwrt/opde:sdk-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
-          docker tag immortalwrt/opde:sdk-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }} immortalwrt/opde:sdk
+          docker pull immortalwrt/opde:sdk-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }}
+          docker tag immortalwrt/opde:sdk-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }} immortalwrt/opde:sdk
+          docker tag immortalwrt/opde:sdk-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }} immortalwrt/opde:sdk-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
           docker images
-      - name: push default docker tag
-        if: ${{ github.event.inputs.target == 'x86' || github.event.inputs.subtarget == '64'}}
+      - name: push default docker tag1
+        if: ${{ github.event.inputs.target == 'x86' && github.event.inputs.subtarget == '64' && github.event.inputs.branch == 'master' }}
         run: docker push immortalwrt/opde:sdk
+      - name: push default docker tag2
+        if: ${{ github.event.inputs.branch == 'master' }}
+        run: docker push immortalwrt/opde:sdk-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
       - name: Prepare assignment
         run: |
           docker run -v $PWD/${{steps.sdk-var2.outputs.SDK_NAME_NO_PREFIX}}:/openwrt immortalwrt/opde:sdk sudo chown opde:opde -R /openwrt
@@ -198,7 +206,7 @@ jobs:
           [ "${{ github.event.inputs.boostrap }}" -eq "0" ] || is_init="-init"
           docker run -v $PWD/${{steps.sdk-var2.outputs.SDK_NAME_NO_PREFIX}}:/openwrt -v $PWD/db:/db immortalwrt/opde:sdk opde assign $is_init /db
       - name: hack docker file
-        run: sed -i 's,FROM immortalwrt/opde:sdk,FROM immortalwrt/opde:sdk-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }},' Dockerfile.worker
+        run: sed -i 's,FROM immortalwrt/opde:sdk,FROM immortalwrt/opde:sdk-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }},' Dockerfile.worker
       - name: Build and push worker
         uses: docker/build-push-action@v2
         with:
@@ -209,17 +217,21 @@ jobs:
             WORKER_CONF_DIR=./${{steps.sdk-var2.outputs.SDK_NAME_NO_PREFIX}}/.opde/worker
           push: true
           tags: |
-            immortalwrt/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
+            immortalwrt/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }}
       - name: set default docker tag
         run: |-
-          docker pull immortalwrt/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
-          docker tag immortalwrt/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }} immortalwrt/opde:worker
+          docker pull immortalwrt/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }}
+          docker tag immortalwrt/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }} immortalwrt/opde:worker
+          docker tag immortalwrt/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }} immortalwrt/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
           docker images
-      - name: push default docker tag
-        if: ${{ github.event.inputs.target == 'x86' || github.event.inputs.subtarget == '64'}}
+      - name: push default docker tag1
+        if: ${{ github.event.inputs.target == 'x86' && github.event.inputs.subtarget == '64' && github.event.inputs.branch == 'master' }}
         run: docker push immortalwrt/opde:worker
+      - name: push default docker tag2
+        if: ${{ github.event.inputs.branch == 'master' }}
+        run: docker push immortalwrt/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
       - name: hack docker file
-        run: sed -i 's,FROM immortalwrt/opde:base,FROM immortalwrt/opde:base-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }},' Dockerfile.ib
+        run: sed -i 's,FROM immortalwrt/opde:base,FROM immortalwrt/opde:base-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }},' Dockerfile.ib
       - name: Build and push image builder
         uses: docker/build-push-action@v2
         with:
@@ -230,15 +242,19 @@ jobs:
             IB_PATH=./${{steps.sdk-var2.outputs.IB_NAME_NO_PREFIX}}
           push: true
           tags: |
-            immortalwrt/opde:ib-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
+            immortalwrt/opde:ib-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }}
       - name: set default docker tag
         run: |-
-          docker pull immortalwrt/opde:ib-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
-          docker tag immortalwrt/opde:ib-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }} immortalwrt/opde:ib
+          docker pull immortalwrt/opde:ib-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }}
+          docker tag immortalwrt/opde:ib-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }} immortalwrt/opde:ib
+          docker tag immortalwrt/opde:ib-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }} immortalwrt/opde:ib-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
           docker images
-      - name: push default docker tag
-        if: ${{ github.event.inputs.target == 'x86' || github.event.inputs.subtarget == '64'}}
+      - name: push default docker tag1
+        if: ${{ github.event.inputs.target == 'x86' && github.event.inputs.subtarget == '64' && github.event.inputs.branch == 'master' }}
         run: docker push immortalwrt/opde:ib
+      - name: push default docker tag2
+        if: ${{ github.event.inputs.branch == 'master' }}
+        run: docker push immortalwrt/opde:ib-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
       - name: Invoke Worker workflow
         if: ${{ github.event.inputs.subsequent == '1' }}
         uses: benc-uk/workflow-dispatch@v1
@@ -255,5 +271,5 @@ jobs:
           docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:base tar -xzf bin.tar.gz
           echo -e "${OD_UPLOADER_CONF}" | sudo tee $PWD/openwrt/auth.json > /dev/null
           docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:base sudo chown -R opde:opde /openwrt/auth.json
-          docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:base OneDriveUploader -c /openwrt/auth.json -r opde/master -s bin/packages
-          docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:base OneDriveUploader -c /openwrt/auth.json -r opde/master -s bin/targets
+          docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:base OneDriveUploader -c /openwrt/auth.json -r opde/${{ github.event.inputs.branch }} -s bin/packages
+          docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:base OneDriveUploader -c /openwrt/auth.json -r opde/${{ github.event.inputs.branch }} -s bin/targets

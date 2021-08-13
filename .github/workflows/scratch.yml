@@ -88,4 +88,4 @@ jobs:
         with:
           workflow: Base
           token: ${{ secrets.BOT_PERSONAL_TOKEN }}
-          inputs: '{ "subsequent": "1", "target": "${{ github.event.inputs.target }}", "subtarget": "${{ github.event.inputs.subtarget }}", "onedrive": "${{ github.event.inputs.onedrive }}", "boostrap": "${{ github.event.inputs.boostrap }}"}'
+          inputs: '{ "subsequent": "1", "branch": "${{ github.event.inputs.branch }}", "target": "${{ github.event.inputs.target }}", "subtarget": "${{ github.event.inputs.subtarget }}", "onedrive": "${{ github.event.inputs.onedrive }}", "boostrap": "${{ github.event.inputs.boostrap }}"}'
