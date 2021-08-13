@@ -4,27 +4,27 @@ on:
   workflow_dispatch:
     inputs:
       chinese:
-        description: "using chinese apt and pip source mirrors(Value: 0, 1)"
+        description: "Use chinese apt, pip mirrors(0, 1)"
         required: false
         default: "0"
       boostrap:
-        description: "Generate boostrap assignment(Value: 0, 1)"
+        description: "First Time Run(0, 1)"
         required: false
         default: "0"
       target:
-        description: "OpenWRT Target System(Value: x86, bcm27xx, ...)"
+        description: "Target(x86, bcm27xx, ...)"
         required: false
         default: "x86"
       subtarget:
-        description: "OpenWRT Subtarget(Value: 64, bcm2711, ...)"
+        description: "Subtarget(64, bcm2711, ...)"
         required: false
         default: "64"
       onedrive:
-        description: "upload to onedrive(Value: 0, 1)"
+        description: "upload to onedrive(0, 1)"
         required: false
         default: "0"
       subsequent:
-        description: "trigger subsequent workflow after build success(Value: 0, 1)"
+        description: "run subsequent workflow(0, 1)"
         required: false
         default: "0"
   schedule:
