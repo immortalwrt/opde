@@ -4,22 +4,26 @@ on:
   workflow_dispatch:
     inputs:
       packages00URL:
-        description: "the download link for Packages-00.tar.gz"
+        description: "Link of Packages-00.tar.gz"
         required: false
+      branch:
+        description: "Source branch(master,openwrt-18.06,...)"
+        required: false
+        default: "master"
       target:
-        description: "OpenWRT Target System(Value: x86, bcm27xx, ...)"
+        description: "Target(x86,bcm27xx,...)"
         required: false
         default: "x86"
       subtarget:
-        description: "OpenWRT Subtarget(Value: 64, bcm2711, ...)"
+        description: "Subtarget(64,bcm2711,...)"
         required: false
         default: "64"
       onedrive:
-        description: "upload to onedrive(Value: 0, 1)"
+        description: "upload to onedrive(0,1)"
         required: false
         default: "0"
       subsequent:
-        description: "trigger subsequent workflow after build success(Value: 0, 1)"
+        description: "run subsequent workflow(0,1)"
         required: false
         default: "0"
 jobs:
@@ -68,8 +72,8 @@ jobs:
           submodules: true
       - name: pull docker image
         run: |
-          docker pull immortalwrt/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
-          docker tag immortalwrt/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }} immortalwrt/opde:worker
+          docker pull immortalwrt/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }}
+          docker tag immortalwrt/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }} immortalwrt/opde:worker
           docker images
       - name: Copy SDK
         run: |
@@ -200,8 +204,8 @@ jobs:
           path: openwrt/bin
       - name: Pull docker image
         run: |
-          docker pull immortalwrt/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
-          docker tag immortalwrt/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }} immortalwrt/opde:worker
+          docker pull immortalwrt/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }}
+          docker tag immortalwrt/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }} immortalwrt/opde:worker
           docker images
       - name: Download Packages-00
         if: ${{ github.event.inputs.packages00URL }}
@@ -258,8 +262,8 @@ jobs:
           docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:worker sudo ls -l /openwrt
           docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:worker find bin -name "vti*.ipk"
           docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:worker bash -c 'rm -rvf $(find bin -name "vti*.ipk")' # remove vti package, waiting fix(https://github.com/MoeClub/OneList/issues/66)
-          docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:worker OneDriveUploader -c /openwrt/auth.json -r opde/master -s bin/targets
-          docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:worker OneDriveUploader -c /openwrt/auth.json -r opde/master -s bin/packages
+          docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:worker OneDriveUploader -c /openwrt/auth.json -r opde/${{ github.event.inputs.branch }} -s bin/targets
+          docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:worker OneDriveUploader -c /openwrt/auth.json -r opde/${{ github.event.inputs.branch }} -s bin/packages
 
   bundle_logs:
     needs:
@@ -353,8 +357,8 @@ jobs:
         run: tar -czvf Logs.tar.gz openwrt
       - name: Pull docker image
         run: |
-          docker pull immortalwrt/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
-          docker tag immortalwrt/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }} immortalwrt/opde:worker
+          docker pull immortalwrt/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }}
+          docker tag immortalwrt/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }} immortalwrt/opde:worker
           docker images
       - name: Upload Logs to artifact
         uses: actions/upload-artifact@v2
