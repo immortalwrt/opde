@@ -11,6 +11,10 @@ on:
         description: "First Time Run(0, 1)"
         required: false
         default: "0"
+      branch:
+        description: "Source branch"
+        required: false
+        default: "master"
       target:
         description: "Target(x86, bcm27xx, ...)"
         required: false
@@ -65,16 +69,19 @@ jobs:
           # TODO: verify target and subtarget is aliable
           push: true
           tags: |
-            immortalwrt/opde:base-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
-          # immortalwrt/opde:base-${{steps.var.outputs.dateDot}}
+            immortalwrt/opde:base-${{ github.event.inputs.branch }}-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
       - name: set default docker tag
         run: |-
-          docker pull immortalwrt/opde:base-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
-          docker tag immortalwrt/opde:base-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }} immortalwrt/opde:base
+          docker pull immortalwrt/opde:base-${{ github.event.inputs.branch }}-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
+          docker tag immortalwrt/opde:base-${{ github.event.inputs.branch }}-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }} immortalwrt/opde:base
+          docker tag immortalwrt/opde:base-${{ github.event.inputs.branch }}-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }} immortalwrt/opde:base-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
           docker images
-      - name: push default docker tag
-        if: ${{ github.event.inputs.target == 'x86' || github.event.inputs.subtarget == '64'}}
+      - name: push default docker tag1
+        if: ${{ github.event.inputs.target == 'x86' && github.event.inputs.subtarget == '64' && github.event.inputs.branch == 'master' }}
         run: docker push immortalwrt/opde:base
+      - name: push default docker tag2
+        if: ${{ github.event.inputs.branch == 'master' }}
+        run: docker push immortalwrt/opde:base-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
       - name: Invoke Base workflow
         if: ${{ github.event.inputs.subsequent == '1' || github.event_name == 'schedule'}}
         uses: benc-uk/workflow-dispatch@master
