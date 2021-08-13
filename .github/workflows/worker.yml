@@ -382,4 +382,4 @@ jobs:
         with:
           workflow: Collector
           token: ${{ secrets.BOT_PERSONAL_TOKEN }}
-          inputs: '{ "dataURL": "${{steps.logs-web.outputs.LINK}}", "target": "${{ github.event.inputs.target }}", "subtarget": "${{ github.event.inputs.subtarget }}"}'
+          inputs: '{ "dataURL": "${{steps.logs-web.outputs.LINK}}", "branch": "${{ github.event.inputs.branch }}", "target": "${{ github.event.inputs.target }}", "subtarget": "${{ github.event.inputs.subtarget }}"}'

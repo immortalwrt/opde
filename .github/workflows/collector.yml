@@ -3,12 +3,16 @@ name: Collector
 on:
   workflow_dispatch:
     inputs:
+      branch:
+        description: "Source branch(master,openwrt-18.06,...)"
+        required: false
+        default: "master"
       target:
-        description: "OpenWRT Target System(Value: x86, bcm27xx, ...)"
+        description: "Target(x86,bcm27xx,...)"
         required: false
         default: "x86"
       subtarget:
-        description: "OpenWRT Subtarget(Value: 64, bcm2711, ...)"
+        description: "Subtarget(64,bcm2711,...)"
         required: false
         default: "64"
       dataURL:
@@ -27,8 +31,8 @@ jobs:
           fetch-depth: "0"
       - name: pull docker image
         run: |
-          docker pull immortalwrt/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}
-          docker tag immortalwrt/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }} immortalwrt/opde:worker
+          docker pull immortalwrt/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }}
+          docker tag immortalwrt/opde:worker-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }} immortalwrt/opde:worker
           docker images
       - name: Download all logs
         run: |
