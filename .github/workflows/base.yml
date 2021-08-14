@@ -47,6 +47,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           submodules: true
+          ref: ${{ github.event.inputs.branch }}
       - name: Checkout OpenWRT repo
         uses: actions/checkout@v2
         with:
