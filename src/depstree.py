@@ -73,7 +73,7 @@ class DependsTree():
                         if not self.dg.has_node(dep[1]):
                             self.dg.add_node(dep[1], cost=0, type='unknown')
                         self.dg.add_edge(pack['Package'], dep[1])
-                    # if dep[0] == 'DEPENDS_SELECT_OTH_IF': # TODO: check condiction
+                    # if dep[0] == 'DEPENDS_SELECT_OTH_IF' or dep[0] == 'DEPENDS_SELECT_OTH_IF_SYMBOL': # TODO: check condiction
                     #     self.dg.add_node(dep[2])
                     #     self.dg.add_edge(pack['Package'],dep[2])
         # some packages in same makefile are build in the same time, just like: golang, golang-doc, golang-src

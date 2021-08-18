@@ -44,7 +44,8 @@ Rule 38    depend -> DEPENDS_SELECT_OTH_IF
 Rule 39    depend -> DEPENDS_WAIT_SYMBOL
 Rule 40    depend -> DEPENDS_WAIT_OTH_SELECTED
 Rule 41    depend -> DEPENDS_WAIT_OTH_SELECTED_IF
-Rule 42    depend -> DEPENDS_SELECT_SYMBOL
+Rule 42    depend -> DEPENDS_SELECT_OTH_IF_SYMBOL
+Rule 43    depend -> DEPENDS_SELECT_SYMBOL
 
 Terminals, with rules where they appear
 
@@ -58,7 +59,8 @@ DEPENDS              : 29
 DEPENDS_END          : 14 17
 DEPENDS_SELECT_OTH   : 37
 DEPENDS_SELECT_OTH_IF : 38
-DEPENDS_SELECT_SYMBOL : 42
+DEPENDS_SELECT_OTH_IF_SYMBOL : 42
+DEPENDS_SELECT_SYMBOL : 43
 DEPENDS_WAIT_OTH_SELECTED : 40
 DEPENDS_WAIT_OTH_SELECTED_IF : 41
 DEPENDS_WAIT_SYMBOL  : 39
@@ -331,7 +333,8 @@ state 17
     (39) depend -> . DEPENDS_WAIT_SYMBOL
     (40) depend -> . DEPENDS_WAIT_OTH_SELECTED
     (41) depend -> . DEPENDS_WAIT_OTH_SELECTED_IF
-    (42) depend -> . DEPENDS_SELECT_SYMBOL
+    (42) depend -> . DEPENDS_SELECT_OTH_IF_SYMBOL
+    (43) depend -> . DEPENDS_SELECT_SYMBOL
 
     DEPENDS_END     shift and go to state 31
     DEPENDS_SELECT_OTH shift and go to state 33
@@ -339,7 +342,8 @@ state 17
     DEPENDS_WAIT_SYMBOL shift and go to state 35
     DEPENDS_WAIT_OTH_SELECTED shift and go to state 36
     DEPENDS_WAIT_OTH_SELECTED_IF shift and go to state 37
-    DEPENDS_SELECT_SYMBOL shift and go to state 38
+    DEPENDS_SELECT_OTH_IF_SYMBOL shift and go to state 38
+    DEPENDS_SELECT_SYMBOL shift and go to state 39
 
     deps                           shift and go to state 29
     depsext                        shift and go to state 30
@@ -381,13 +385,13 @@ state 20
     PACKAGEID       reduce using rule 24 (packageComb -> packageid properties .)
     SOURCE          reduce using rule 24 (packageComb -> packageid properties .)
     $end            reduce using rule 24 (packageComb -> packageid properties .)
-    CONFIG          shift and go to state 40
+    CONFIG          shift and go to state 41
     DERIVATE        shift and go to state 14
     DESCRIPTION     shift and go to state 15
     PROVIDES        shift and go to state 16
     DEPENDS         shift and go to state 17
 
-    configComb                     shift and go to state 39
+    configComb                     shift and go to state 40
     kv                             shift and go to state 22
 
 state 21
@@ -432,7 +436,7 @@ state 24
 
     (27) kv -> DESCRIPTION PARAMS . DELIMITER
 
-    DELIMITER       shift and go to state 41
+    DELIMITER       shift and go to state 42
 
 
 state 25
@@ -454,8 +458,8 @@ state 26
     (16) provides -> providx . PROVIDES_END
     (13) providx -> providx . PROVIDES_ITEM
 
-    PROVIDES_END    shift and go to state 42
-    PROVIDES_ITEM   shift and go to state 43
+    PROVIDES_END    shift and go to state 43
+    PROVIDES_ITEM   shift and go to state 44
 
 
 state 27
@@ -503,17 +507,19 @@ state 30
     (39) depend -> . DEPENDS_WAIT_SYMBOL
     (40) depend -> . DEPENDS_WAIT_OTH_SELECTED
     (41) depend -> . DEPENDS_WAIT_OTH_SELECTED_IF
-    (42) depend -> . DEPENDS_SELECT_SYMBOL
+    (42) depend -> . DEPENDS_SELECT_OTH_IF_SYMBOL
+    (43) depend -> . DEPENDS_SELECT_SYMBOL
 
-    DEPENDS_END     shift and go to state 44
+    DEPENDS_END     shift and go to state 45
     DEPENDS_SELECT_OTH shift and go to state 33
     DEPENDS_SELECT_OTH_IF shift and go to state 34
     DEPENDS_WAIT_SYMBOL shift and go to state 35
     DEPENDS_WAIT_OTH_SELECTED shift and go to state 36
     DEPENDS_WAIT_OTH_SELECTED_IF shift and go to state 37
-    DEPENDS_SELECT_SYMBOL shift and go to state 38
+    DEPENDS_SELECT_OTH_IF_SYMBOL shift and go to state 38
+    DEPENDS_SELECT_SYMBOL shift and go to state 39
 
-    depend                         shift and go to state 45
+    depend                         shift and go to state 46
 
 state 31
 
@@ -539,6 +545,7 @@ state 32
     DEPENDS_WAIT_SYMBOL reduce using rule 6 (depsext -> depend .)
     DEPENDS_WAIT_OTH_SELECTED reduce using rule 6 (depsext -> depend .)
     DEPENDS_WAIT_OTH_SELECTED_IF reduce using rule 6 (depsext -> depend .)
+    DEPENDS_SELECT_OTH_IF_SYMBOL reduce using rule 6 (depsext -> depend .)
     DEPENDS_SELECT_SYMBOL reduce using rule 6 (depsext -> depend .)
 
 
@@ -552,6 +559,7 @@ state 33
     DEPENDS_WAIT_SYMBOL reduce using rule 37 (depend -> DEPENDS_SELECT_OTH .)
     DEPENDS_WAIT_OTH_SELECTED reduce using rule 37 (depend -> DEPENDS_SELECT_OTH .)
     DEPENDS_WAIT_OTH_SELECTED_IF reduce using rule 37 (depend -> DEPENDS_SELECT_OTH .)
+    DEPENDS_SELECT_OTH_IF_SYMBOL reduce using rule 37 (depend -> DEPENDS_SELECT_OTH .)
     DEPENDS_SELECT_SYMBOL reduce using rule 37 (depend -> DEPENDS_SELECT_OTH .)
 
 
@@ -565,6 +573,7 @@ state 34
     DEPENDS_WAIT_SYMBOL reduce using rule 38 (depend -> DEPENDS_SELECT_OTH_IF .)
     DEPENDS_WAIT_OTH_SELECTED reduce using rule 38 (depend -> DEPENDS_SELECT_OTH_IF .)
     DEPENDS_WAIT_OTH_SELECTED_IF reduce using rule 38 (depend -> DEPENDS_SELECT_OTH_IF .)
+    DEPENDS_SELECT_OTH_IF_SYMBOL reduce using rule 38 (depend -> DEPENDS_SELECT_OTH_IF .)
     DEPENDS_SELECT_SYMBOL reduce using rule 38 (depend -> DEPENDS_SELECT_OTH_IF .)
 
 
@@ -578,6 +587,7 @@ state 35
     DEPENDS_WAIT_SYMBOL reduce using rule 39 (depend -> DEPENDS_WAIT_SYMBOL .)
     DEPENDS_WAIT_OTH_SELECTED reduce using rule 39 (depend -> DEPENDS_WAIT_SYMBOL .)
     DEPENDS_WAIT_OTH_SELECTED_IF reduce using rule 39 (depend -> DEPENDS_WAIT_SYMBOL .)
+    DEPENDS_SELECT_OTH_IF_SYMBOL reduce using rule 39 (depend -> DEPENDS_WAIT_SYMBOL .)
     DEPENDS_SELECT_SYMBOL reduce using rule 39 (depend -> DEPENDS_WAIT_SYMBOL .)
 
 
@@ -591,6 +601,7 @@ state 36
     DEPENDS_WAIT_SYMBOL reduce using rule 40 (depend -> DEPENDS_WAIT_OTH_SELECTED .)
     DEPENDS_WAIT_OTH_SELECTED reduce using rule 40 (depend -> DEPENDS_WAIT_OTH_SELECTED .)
     DEPENDS_WAIT_OTH_SELECTED_IF reduce using rule 40 (depend -> DEPENDS_WAIT_OTH_SELECTED .)
+    DEPENDS_SELECT_OTH_IF_SYMBOL reduce using rule 40 (depend -> DEPENDS_WAIT_OTH_SELECTED .)
     DEPENDS_SELECT_SYMBOL reduce using rule 40 (depend -> DEPENDS_WAIT_OTH_SELECTED .)
 
 
@@ -604,23 +615,39 @@ state 37
     DEPENDS_WAIT_SYMBOL reduce using rule 41 (depend -> DEPENDS_WAIT_OTH_SELECTED_IF .)
     DEPENDS_WAIT_OTH_SELECTED reduce using rule 41 (depend -> DEPENDS_WAIT_OTH_SELECTED_IF .)
     DEPENDS_WAIT_OTH_SELECTED_IF reduce using rule 41 (depend -> DEPENDS_WAIT_OTH_SELECTED_IF .)
+    DEPENDS_SELECT_OTH_IF_SYMBOL reduce using rule 41 (depend -> DEPENDS_WAIT_OTH_SELECTED_IF .)
     DEPENDS_SELECT_SYMBOL reduce using rule 41 (depend -> DEPENDS_WAIT_OTH_SELECTED_IF .)
 
 
 state 38
 
-    (42) depend -> DEPENDS_SELECT_SYMBOL .
+    (42) depend -> DEPENDS_SELECT_OTH_IF_SYMBOL .
 
-    DEPENDS_END     reduce using rule 42 (depend -> DEPENDS_SELECT_SYMBOL .)
-    DEPENDS_SELECT_OTH reduce using rule 42 (depend -> DEPENDS_SELECT_SYMBOL .)
-    DEPENDS_SELECT_OTH_IF reduce using rule 42 (depend -> DEPENDS_SELECT_SYMBOL .)
-    DEPENDS_WAIT_SYMBOL reduce using rule 42 (depend -> DEPENDS_SELECT_SYMBOL .)
-    DEPENDS_WAIT_OTH_SELECTED reduce using rule 42 (depend -> DEPENDS_SELECT_SYMBOL .)
-    DEPENDS_WAIT_OTH_SELECTED_IF reduce using rule 42 (depend -> DEPENDS_SELECT_SYMBOL .)
-    DEPENDS_SELECT_SYMBOL reduce using rule 42 (depend -> DEPENDS_SELECT_SYMBOL .)
+    DEPENDS_END     reduce using rule 42 (depend -> DEPENDS_SELECT_OTH_IF_SYMBOL .)
+    DEPENDS_SELECT_OTH reduce using rule 42 (depend -> DEPENDS_SELECT_OTH_IF_SYMBOL .)
+    DEPENDS_SELECT_OTH_IF reduce using rule 42 (depend -> DEPENDS_SELECT_OTH_IF_SYMBOL .)
+    DEPENDS_WAIT_SYMBOL reduce using rule 42 (depend -> DEPENDS_SELECT_OTH_IF_SYMBOL .)
+    DEPENDS_WAIT_OTH_SELECTED reduce using rule 42 (depend -> DEPENDS_SELECT_OTH_IF_SYMBOL .)
+    DEPENDS_WAIT_OTH_SELECTED_IF reduce using rule 42 (depend -> DEPENDS_SELECT_OTH_IF_SYMBOL .)
+    DEPENDS_SELECT_OTH_IF_SYMBOL reduce using rule 42 (depend -> DEPENDS_SELECT_OTH_IF_SYMBOL .)
+    DEPENDS_SELECT_SYMBOL reduce using rule 42 (depend -> DEPENDS_SELECT_OTH_IF_SYMBOL .)
 
 
 state 39
+
+    (43) depend -> DEPENDS_SELECT_SYMBOL .
+
+    DEPENDS_END     reduce using rule 43 (depend -> DEPENDS_SELECT_SYMBOL .)
+    DEPENDS_SELECT_OTH reduce using rule 43 (depend -> DEPENDS_SELECT_SYMBOL .)
+    DEPENDS_SELECT_OTH_IF reduce using rule 43 (depend -> DEPENDS_SELECT_SYMBOL .)
+    DEPENDS_WAIT_SYMBOL reduce using rule 43 (depend -> DEPENDS_SELECT_SYMBOL .)
+    DEPENDS_WAIT_OTH_SELECTED reduce using rule 43 (depend -> DEPENDS_SELECT_SYMBOL .)
+    DEPENDS_WAIT_OTH_SELECTED_IF reduce using rule 43 (depend -> DEPENDS_SELECT_SYMBOL .)
+    DEPENDS_SELECT_OTH_IF_SYMBOL reduce using rule 43 (depend -> DEPENDS_SELECT_SYMBOL .)
+    DEPENDS_SELECT_SYMBOL reduce using rule 43 (depend -> DEPENDS_SELECT_SYMBOL .)
+
+
+state 40
 
     (25) packageComb -> packageid properties configComb .
 
@@ -629,7 +656,7 @@ state 39
     $end            reduce using rule 25 (packageComb -> packageid properties configComb .)
 
 
-state 40
+state 41
 
     (32) configComb -> CONFIG . confx DELIMITER
     (8) confx -> . configItem
@@ -637,13 +664,13 @@ state 40
     (33) configItem -> . CONFIG_ITEM PARAMS
     (34) configItem -> . CONFIG_HELP helpdoc
 
-    CONFIG_ITEM     shift and go to state 48
-    CONFIG_HELP     shift and go to state 49
+    CONFIG_ITEM     shift and go to state 49
+    CONFIG_HELP     shift and go to state 50
 
-    confx                          shift and go to state 46
-    configItem                     shift and go to state 47
+    confx                          shift and go to state 47
+    configItem                     shift and go to state 48
 
-state 41
+state 42
 
     (27) kv -> DESCRIPTION PARAMS DELIMITER .
 
@@ -657,7 +684,7 @@ state 41
     CONFIG          reduce using rule 27 (kv -> DESCRIPTION PARAMS DELIMITER .)
 
 
-state 42
+state 43
 
     (16) provides -> providx PROVIDES_END .
 
@@ -671,7 +698,7 @@ state 42
     CONFIG          reduce using rule 16 (provides -> providx PROVIDES_END .)
 
 
-state 43
+state 44
 
     (13) providx -> providx PROVIDES_ITEM .
 
@@ -679,7 +706,7 @@ state 43
     PROVIDES_ITEM   reduce using rule 13 (providx -> providx PROVIDES_ITEM .)
 
 
-state 44
+state 45
 
     (14) deps -> depsext DEPENDS_END .
 
@@ -693,7 +720,7 @@ state 44
     CONFIG          reduce using rule 14 (deps -> depsext DEPENDS_END .)
 
 
-state 45
+state 46
 
     (7) depsext -> depsext depend .
 
@@ -703,23 +730,24 @@ state 45
     DEPENDS_WAIT_SYMBOL reduce using rule 7 (depsext -> depsext depend .)
     DEPENDS_WAIT_OTH_SELECTED reduce using rule 7 (depsext -> depsext depend .)
     DEPENDS_WAIT_OTH_SELECTED_IF reduce using rule 7 (depsext -> depsext depend .)
+    DEPENDS_SELECT_OTH_IF_SYMBOL reduce using rule 7 (depsext -> depsext depend .)
     DEPENDS_SELECT_SYMBOL reduce using rule 7 (depsext -> depsext depend .)
 
 
-state 46
+state 47
 
     (32) configComb -> CONFIG confx . DELIMITER
     (9) confx -> confx . configItem
     (33) configItem -> . CONFIG_ITEM PARAMS
     (34) configItem -> . CONFIG_HELP helpdoc
 
-    DELIMITER       shift and go to state 50
-    CONFIG_ITEM     shift and go to state 48
-    CONFIG_HELP     shift and go to state 49
+    DELIMITER       shift and go to state 51
+    CONFIG_ITEM     shift and go to state 49
+    CONFIG_HELP     shift and go to state 50
 
-    configItem                     shift and go to state 51
+    configItem                     shift and go to state 52
 
-state 47
+state 48
 
     (8) confx -> configItem .
 
@@ -728,14 +756,14 @@ state 47
     CONFIG_HELP     reduce using rule 8 (confx -> configItem .)
 
 
-state 48
+state 49
 
     (33) configItem -> CONFIG_ITEM . PARAMS
 
-    PARAMS          shift and go to state 52
+    PARAMS          shift and go to state 53
 
 
-state 49
+state 50
 
     (34) configItem -> CONFIG_HELP . helpdoc
     (15) helpdoc -> . helpx CONFIG_HELP_END
@@ -743,13 +771,13 @@ state 49
     (10) helpx -> . CONFIG_HELP_LINE
     (11) helpx -> . helpx CONFIG_HELP_LINE
 
-    CONFIG_HELP_END shift and go to state 55
-    CONFIG_HELP_LINE shift and go to state 56
+    CONFIG_HELP_END shift and go to state 56
+    CONFIG_HELP_LINE shift and go to state 57
 
-    helpdoc                        shift and go to state 53
-    helpx                          shift and go to state 54
+    helpdoc                        shift and go to state 54
+    helpx                          shift and go to state 55
 
-state 50
+state 51
 
     (32) configComb -> CONFIG confx DELIMITER .
 
@@ -758,7 +786,7 @@ state 50
     $end            reduce using rule 32 (configComb -> CONFIG confx DELIMITER .)
 
 
-state 51
+state 52
 
     (9) confx -> confx configItem .
 
@@ -767,7 +795,7 @@ state 51
     CONFIG_HELP     reduce using rule 9 (confx -> confx configItem .)
 
 
-state 52
+state 53
 
     (33) configItem -> CONFIG_ITEM PARAMS .
 
@@ -776,7 +804,7 @@ state 52
     CONFIG_HELP     reduce using rule 33 (configItem -> CONFIG_ITEM PARAMS .)
 
 
-state 53
+state 54
 
     (34) configItem -> CONFIG_HELP helpdoc .
 
@@ -785,16 +813,16 @@ state 53
     CONFIG_HELP     reduce using rule 34 (configItem -> CONFIG_HELP helpdoc .)
 
 
-state 54
+state 55
 
     (15) helpdoc -> helpx . CONFIG_HELP_END
     (11) helpx -> helpx . CONFIG_HELP_LINE
 
-    CONFIG_HELP_END shift and go to state 57
-    CONFIG_HELP_LINE shift and go to state 58
+    CONFIG_HELP_END shift and go to state 58
+    CONFIG_HELP_LINE shift and go to state 59
 
 
-state 55
+state 56
 
     (18) helpdoc -> CONFIG_HELP_END .
 
@@ -803,7 +831,7 @@ state 55
     CONFIG_HELP     reduce using rule 18 (helpdoc -> CONFIG_HELP_END .)
 
 
-state 56
+state 57
 
     (10) helpx -> CONFIG_HELP_LINE .
 
@@ -811,7 +839,7 @@ state 56
     CONFIG_HELP_LINE reduce using rule 10 (helpx -> CONFIG_HELP_LINE .)
 
 
-state 57
+state 58
 
     (15) helpdoc -> helpx CONFIG_HELP_END .
 
@@ -820,7 +848,7 @@ state 57
     CONFIG_HELP     reduce using rule 15 (helpdoc -> helpx CONFIG_HELP_END .)
 
 
-state 58
+state 59
 
     (11) helpx -> helpx CONFIG_HELP_LINE .
 

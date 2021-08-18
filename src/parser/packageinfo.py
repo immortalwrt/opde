@@ -112,6 +112,7 @@ class PackageInfoParser(PackageInfoLexer):
                | DEPENDS_WAIT_SYMBOL
                | DEPENDS_WAIT_OTH_SELECTED
                | DEPENDS_WAIT_OTH_SELECTED_IF
+               | DEPENDS_SELECT_OTH_IF_SYMBOL
                | DEPENDS_SELECT_SYMBOL
         '''
         p[0] = p[1]

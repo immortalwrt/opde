@@ -212,6 +212,7 @@ class PackageInfoLexer(InfoLexer):
         'DEPENDS_WAIT_SYMBOL',  # @<symbol>
         'DEPENDS_WAIT_OTH_SELECTED',  # <pkg>
         'DEPENDS_WAIT_OTH_SELECTED_IF',  # @<symbol>:<pkg>
+        'DEPENDS_SELECT_OTH_IF_SYMBOL',  # +@<symbol>:<pkg>
         'DEPENDS_SELECT_SYMBOL',  # +@<symbol>
         'DEPENDS_END',
         'PROVIDES',
@@ -280,7 +281,16 @@ class PackageInfoLexer(InfoLexer):
         # print([t.value])
         return t
 
-    # issue: https://github.com/openwrt/packages/issues/12802https://github.com/openwrt/packages/issues/12802
+    @TOKEN(r'(\+\@?{}:{}){}'.format(packageSymbolRule, packageNameRule, packageItemRule))
+    def t_depends_select_other_if_symbol(self, t):
+        t.type = 'DEPENDS_SELECT_OTH_IF_SYMBOL'
+        t.value = t.value.lstrip('+@').split(':')
+        t.value = [t.type] + t.value
+        # TODO: laxer for symbol
+        # print([t.value])
+        return t
+
+    # issue: https://github.com/openwrt/packages/issues/12802
     @TOKEN(r'(\@?{}:{}){}'.format(packageSymbolRule, packageNameRule, packageItemRule))
     def t_depends_wait_other_selected_if(self, t):
         t.type = 'DEPENDS_WAIT_OTH_SELECTED_IF'
