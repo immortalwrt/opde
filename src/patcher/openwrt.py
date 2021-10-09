@@ -1,5 +1,4 @@
 from ..bash import run
-from git import Repo
 from pathlib import Path
 
 _patches_dir = Path(__file__).parent.absolute()
