@@ -6,11 +6,9 @@ authors = ["ElonH <elonhhuang@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.6"
-PyGithub = "^1.51"
 ply = "^3.11"
 networkx = "^2.4"
 matplotlib = "^3.2.2"
-gitpython = "^3.1.7"
 Click = "^7.1.2"
 tinydb = "^4.1.1"
 pyyaml = "^5.3.1"
