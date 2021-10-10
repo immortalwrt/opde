@@ -8,8 +8,8 @@ import click
 from src import OpdeSetting, bash, patcher, parser, configer, dumper, extractor, database, depstree, distributor, worker
 
 _opde_mode = os.environ.get('OPDE_MODE')
-_opde_target = os.environ.get('OPDE_TARGET', 'x64')
-_opde_subtarget = os.environ.get('OPDE_SUBTARGET', '86')
+_opde_target = os.environ.get('OPDE_TARGET', 'x86')
+_opde_subtarget = os.environ.get('OPDE_SUBTARGET', '64')
 _allowed_mode = ['BASE', 'SDK']
 
 
