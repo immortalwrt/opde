@@ -127,6 +127,43 @@ def revPatch(ctx):
     #                        setting.openwrt_dir_in_sdk)
 
 
+@cli.command(hidden=False)
+@click.argument('changelist', type=click.Path(file_okay=True, dir_okay=False))
+@click.option('-post', '--include-post-packages', 'post',
+              is_flag=True, default=False, help='Include packages which depends on affected pakcages')
+@click.option('-o', '--output', 'dst', help='output to file',
+              default=None, type=click.Path(exists=True, file_okay=True, dir_okay=False))
+@click.pass_context
+def find_affected(ctx, changelist: str, post: bool, dst: str):
+    'Find out all affected packages when Makefile is modified'
+    setting: OpdeSetting = ctx.obj['set']
+    deps_tree = depstree.DependsTree()
+    deps_tree.inject_package_info(setting.packageinfo_ast)
+    setting.StoreDepsDAG(deps_tree.to_json())
+    changed_files = Path(changelist).read_text().splitlines()
+    conf = []
+    for file in changed_files:
+        packs = deps_tree.find_packs_on_source(file)
+        if len(packs) == 0:
+            continue
+        conf.append("# source file: %s\n" % file)
+        conf.extend(['CONFIG_PACKAGE_' + i + '=y' for i in packs])
+        if post:
+            for pack in packs:
+                post_packs = deps_tree.find_packs_depends_on(pack)
+                if len(post_packs) == 0:
+                    continue
+                conf.append("# >>> %s is selected by: " % pack)
+                conf.extend(['CONFIG_PACKAGE_' + i + '=y' for i in post_packs])
+                conf.append("# <<< %s" % pack)
+        conf.append('\n')
+    if dst is None:
+        print(str.join('\n', conf))
+    else:
+        Path(dst).write_text(str.join('\n', conf))
+    return
+
+
 @cli.command()
 @add_condictional_options({
     click.option('-sdk', '--build-sdk', 'sdk',

@@ -186,6 +186,8 @@ class DependsTree():
                 'kmod-switch-mvsw61xx', 'package/kernel/linux'],
             ['package/kernel/linux', 'package/feeds/base/wireguard',
                 'wireguard', 'wireguard-tools'],
+            ['package/firmware/linux-firmware',
+                'package/firmware/ath10k-ct-firmware', 'ath10k-firmware-qca9887-ct']
         ]
         for cycle in cycles:
             name = str(cycle)
@@ -262,3 +264,41 @@ class DependsTree():
         output jit json format data to represent dag
         '''
         return nx.readwrite.json_graph.jit_data(self.dg, indent=2)
+
+    def find_packs_on_source(self, source: str):
+        '''
+        find all packages that defined in source
+        '''
+        if not self.dg.has_node(source):
+            return []
+        node = self.dg.nodes[source]
+        if node['type'] != 'source':
+            return []
+        packs = list(nx.dfs_preorder_nodes(self.dg, source, 1))[1:]
+        for pack in packs:
+            if self.dg.nodes[pack]['type'] != 'ipkg':
+                BaseException('Impossible')
+        return packs
+
+    def find_packs_depends_on(self, pack: str):
+        '''
+        find all packages that depends on `pack`
+        '''
+        if not self.dg.has_node(pack):
+            return []
+        node = self.dg.nodes[pack]
+        if node['type'] != 'ipkg':
+            return []
+        queue = [pack]
+        all_post_packs = set()
+        while len(queue) != 0:
+            pack = queue.pop()
+            for edge in self.dg.in_edges(pack):
+                post_pack = edge[0]
+                if self.dg.nodes[post_pack]['type'] == 'ipkg':
+                    if post_pack in all_post_packs:
+                        continue
+                    all_post_packs.add(post_pack)
+                queue.extend(self.dg.in_edges(post_pack))
+                pass
+        return list(all_post_packs)
