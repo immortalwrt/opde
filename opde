@@ -132,7 +132,7 @@ def revPatch(ctx):
 @click.option('-post', '--include-post-packages', 'post',
               is_flag=True, default=False, help='Include packages which depends on affected pakcages')
 @click.option('-o', '--output', 'dst', help='output to file',
-              default=None, type=click.Path(exists=True, file_okay=True, dir_okay=False))
+              default=None, type=click.Path(file_okay=True, dir_okay=False))
 @click.pass_context
 def find_affected(ctx, changelist: str, post: bool, dst: str):
     'Find out all affected packages when Makefile is modified'
