@@ -134,7 +134,7 @@ def revPatch(ctx):
 @click.option('-o', '--output', 'dst', help='output to file',
               default=None, type=click.Path(file_okay=True, dir_okay=False))
 @click.pass_context
-def find_affected(ctx, changelist: str, post: bool, dst: str):
+def find_affected(ctx, changelist: str, post: bool, dst: str):  # TODO: merge into config
     'Find out all affected packages when Makefile is modified'
     setting: OpdeSetting = ctx.obj['set']
     deps_tree = depstree.DependsTree()
