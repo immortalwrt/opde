@@ -1,11 +1,11 @@
 diff --git a/include/subdir.mk b/include/subdir.mk
-index 6512e24c2e..c54d5cd48c 100644
+index 155f493538..fb431a9ff5 100644
 --- a/include/subdir.mk
 +++ b/include/subdir.mk
-@@ -38,12 +38,13 @@ subdir_make_opts = \
- # 2: target
+@@ -37,12 +37,13 @@ subdir_make_opts = \
  # 3: build type
  # 4: build variant
+ # 5: all variants
 +# export args array to logs (opde)
  log_make = \
  	 $(if $(call debug,$(1),v),,@)+ \
