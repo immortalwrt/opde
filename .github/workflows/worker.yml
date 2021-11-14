@@ -54,6 +54,14 @@ jobs:
           - "19"
           - "20"
     steps:
+      - name: show input
+        run: |-
+          echo "Link of Packages-00.tar.gz: ${{ github.event.inputs.packages00URL }}"
+          echo "Source branch: ${{ github.event.inputs.branch }}"
+          echo "Target: ${{ github.event.inputs.target }}"
+          echo "Subtarget: ${{ github.event.inputs.subtarget }}"
+          echo "upload to onedrive: ${{ github.event.inputs.onedrive }}"
+          echo "run subsequent workflow: ${{ github.event.inputs.subsequent }}"
       - name: Free disk space
         run: |
           sudo -E swapoff -a
