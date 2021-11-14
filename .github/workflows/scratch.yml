@@ -37,6 +37,15 @@ jobs:
   scratch:
     runs-on: ubuntu-latest
     steps:
+      - name: show input
+        run: |-
+          echo "Use chinese apt, pip mirrors: ${{ github.event.inputs.chinese }}"
+          echo "First Time Run: ${{ github.event.inputs.boostrap }}"
+          echo "Source branch: ${{ github.event.inputs.branch }}"
+          echo "Target: ${{ github.event.inputs.target }}"
+          echo "Subtarget: ${{ github.event.inputs.subtarget }}"
+          echo "upload to onedrive: ${{ github.event.inputs.onedrive }}"
+          echo "run subsequent workflow: ${{ github.event.inputs.subsequent }}"
       - name: Checkout
         uses: actions/checkout@v2
         with:
