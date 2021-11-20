@@ -19,8 +19,8 @@ on:
         description: "Subtarget(64,bcm2711,...)"
         required: false
         default: "64"
-      onedrive:
-        description: "upload to onedrive(0,1)"
+      dlsvr:
+        description: "upload to download server(0,1)"
         required: false
         default: "0"
       subsequent:
@@ -37,7 +37,7 @@ jobs:
           echo "Source branch: ${{ github.event.inputs.branch }}"
           echo "Target: ${{ github.event.inputs.target }}"
           echo "Subtarget: ${{ github.event.inputs.subtarget }}"
-          echo "upload to onedrive: ${{ github.event.inputs.onedrive }}"
+          echo "upload to download server: ${{ github.event.inputs.dlsvr }}"
           echo "run subsequent workflow: ${{ github.event.inputs.subsequent }}"
       - name: Free disk space
         run: |
@@ -270,15 +270,14 @@ jobs:
         with:
           workflow: Worker
           token: ${{ secrets.BOT_PERSONAL_TOKEN }}
-          inputs: '{ "subsequent": "1", "packages00URL": "${{steps.Packages-00-web.outputs.LINK}}", "branch": "${{ github.event.inputs.branch }}", "target": "${{ github.event.inputs.target }}", "subtarget": "${{ github.event.inputs.subtarget }}", "onedrive": "${{ github.event.inputs.onedrive }}"}'
-      - name: Upload to OneDrive for ImmortalWRT
-        if: ${{ github.event.inputs.onedrive == '1' }}
+          inputs: '{ "subsequent": "1", "packages00URL": "${{steps.Packages-00-web.outputs.LINK}}", "branch": "${{ github.event.inputs.branch }}", "target": "${{ github.event.inputs.target }}", "subtarget": "${{ github.event.inputs.subtarget }}", "dlsvr": "${{ github.event.inputs.dlsvr }}"}'
+      - name: Upload to ImmortalWRT Download server
+        if: ${{ github.event.inputs.dlsvr == '1' }}
         env:
-          OD_UPLOADER_CONF: "${{ secrets.ONEDRIVEUPLOADER_CONF }}"
+          DL_SERVER_SSH: "${{ secrets.DL_SERVER_SSH }}"
         run: |
           sudo rm openwrt/bin -rf
-          docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:base tar -xzf bin.tar.gz
-          echo -e "${OD_UPLOADER_CONF}" | sudo tee $PWD/openwrt/auth.json > /dev/null
-          docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:base sudo chown -R opde:opde /openwrt/auth.json
-          docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:base OneDriveUploader -c /openwrt/auth.json -r opde/${{ github.event.inputs.branch }} -s bin/packages
-          docker run -v $PWD/openwrt:/openwrt immortalwrt/opde:base OneDriveUploader -c /openwrt/auth.json -r opde/${{ github.event.inputs.branch }} -s bin/targets
+          sudo chown $(id -u -n):$(id -g -n) bin.tar.gz
+          tar -xzf openwrt/bin.tar.gz
+          bash <(echo -e "${DL_SERVER_SSH}")
+          rsync -azhv --delete --chown www:www bin/* dlsvr:/mnt/immortalwrt-opde/${{ github.event.inputs.branch }}
