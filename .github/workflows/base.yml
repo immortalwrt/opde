@@ -277,7 +277,7 @@ jobs:
           DL_SERVER_SSH: "${{ secrets.DL_SERVER_SSH }}"
         run: |
           sudo rm openwrt/bin -rf
-          sudo chown $(id -u -n):$(id -g -n) bin.tar.gz
+          sudo chown $(id -u -n):$(id -g -n) openwrt/bin.tar.gz
           tar -xzf openwrt/bin.tar.gz
           bash <(echo -e "${DL_SERVER_SSH}")
           rsync -azhv --delete --chown www:www bin/* dlsvr:/mnt/immortalwrt-opde/${{ github.event.inputs.branch }}
