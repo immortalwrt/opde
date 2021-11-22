@@ -19,9 +19,17 @@ RUN apt-get update -y &&\
 	build-essential asciidoc binutils bzip2 gawk gdisk gettext git libncurses5-dev libz-dev patch unzip zlib1g-dev \
 	lib32gcc1 libc6-dev-i386 subversion flex uglifyjs git-core \
 	gcc-multilib g++-multilib p7zip p7zip-full msmtp libssl-dev texinfo libreadline-dev libglib2.0-dev xmlto \
+	clang-12 lldb-12 lld-12 clangd-12 \
 	qemu-utils upx libelf-dev autoconf automake libtool autopoint \
 	ccache curl wget vim nano python3 python3-pip python3-ply python2 \
 	haveged lrzsz device-tree-compiler scons antlr3 gperf intltool rsync mkisofs \
+	&& update-alternatives --install /usr/bin/lld lld /usr/bin/lld-12 120 \
+	&& update-alternatives --install /usr/bin/lldb lldb /usr/bin/lldb-12 120 \
+	&& update-alternatives --install /usr/bin/lldb-server lldb-server /usr/bin/lldb-server-12 120 \
+	&& update-alternatives --install /usr/bin/clang clang /usr/bin/clang-12 120 \
+	&& update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-12 120 \
+	&& update-alternatives --install /usr/bin/clang++ clang++ /usr/bin/clang++-12 120 \
+	&& update-alternatives --install /usr/bin/clang-cpp clang-cpp /usr/bin/clang-cpp-12 120 \
 	&& apt-get -y autoremove \
 	&& apt-get clean \
 	&& rm -rf /var/lib/apt/lists/* \
