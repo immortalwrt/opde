@@ -266,7 +266,7 @@ jobs:
         run: |
           sudo chown $(id -u -n):$(id -g -n) -R openwrt/bin
           bash <(echo -e "${DL_SERVER_SSH}")
-          rsync -azhv --chown www:www openwrt/ bin/* dlsvr:/mnt/immortalwrt-opde/${{ github.event.inputs.branch }}
+          rsync -azhv --chown www:www openwrt/bin/* dlsvr:/mnt/immortalwrt-opde/${{ github.event.inputs.branch }}
 
   bundle_logs:
     needs:
