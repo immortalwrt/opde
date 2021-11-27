@@ -280,4 +280,4 @@ jobs:
           sudo chown $(id -u -n):$(id -g -n) openwrt/bin.tar.gz
           tar -xzf openwrt/bin.tar.gz
           bash <(echo -e "${DL_SERVER_SSH}")
-          rsync -azhv --delete --chown www:www bin/* dlsvr:/mnt/immortalwrt-opde/${{ github.event.inputs.branch }}
+          rsync -azhv --chown www:www bin/* dlsvr:/mnt/immortalwrt-opde/${{ github.event.inputs.branch }}
