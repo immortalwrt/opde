@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>package_feeds_packages_node-aws-crt on Opde Issues Tracker</title>
+    <link>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_node-aws-crt/</link>
+    <description>Recent content in package_feeds_packages_node-aws-crt on Opde Issues Tracker</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 Oct 2021 22:29:14 +0000</lastBuildDate>
+    
+	<atom:link href="https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_node-aws-crt/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>compile.33</title>
+      <link>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_node-aws-crt/compile.33/</link>
+      <pubDate>Sat, 30 Oct 2021 22:29:14 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_node-aws-crt/compile.33/</guid>
+      <description>build number: 33
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/packages/node-aws-crt/compile -j$(nproc) || make package/feeds/packages/node-aws-crt/compile V=s Compile.txt Applying ./patches/001-modify_compile_options.patch using plaintext: patching file crt/s2n/CMakeLists.txt patching file crt/s2n/s2n.mk patching file scripts/build.js patching file crt/aws-c-common/cmake/AwsCFlags.cmake Applying ./patches/002-fix_build_with_cmake_3_19.patch using plaintext: patching file crt/aws-c-common/cmake/AwsSharedLibSetup.cmake Applying ./patches/999-fix_shared_libs.patch using plaintext: patching file crt/aws-c-common/include/aws/common/private/thread_shared.</description>
+    </item>
+    
+    <item>
+      <title>compile.21</title>
+      <link>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_node-aws-crt/compile.21/</link>
+      <pubDate>Thu, 19 Aug 2021 19:54:52 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_node-aws-crt/compile.21/</guid>
+      <description>build number: 21
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/packages/node-aws-crt/compile -j$(nproc) || make package/feeds/packages/node-aws-crt/compile V=s Compile.txt Applying ./patches/001-modify_compile_options.patch using plaintext: patching file crt/s2n/CMakeLists.txt patching file crt/s2n/s2n.mk patching file scripts/build.js patching file crt/aws-c-common/cmake/AwsCFlags.cmake Applying ./patches/002-fix_build_with_cmake_3_19.patch using plaintext: patching file crt/aws-c-common/cmake/AwsSharedLibSetup.cmake Applying ./patches/999-fix_shared_libs.patch using plaintext: patching file crt/aws-c-common/include/aws/common/private/thread_shared.</description>
+    </item>
+    
+  </channel>
+</rss>

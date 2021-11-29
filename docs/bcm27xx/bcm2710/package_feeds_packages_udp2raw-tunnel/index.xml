@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>package_feeds_packages_udp2raw-tunnel on Opde Issues Tracker</title>
+    <link>https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_packages_udp2raw-tunnel/</link>
+    <description>Recent content in package_feeds_packages_udp2raw-tunnel on Opde Issues Tracker</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 31 Oct 2021 01:47:40 +0000</lastBuildDate>
+    
+	<atom:link href="https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_packages_udp2raw-tunnel/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>compile.34</title>
+      <link>https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_packages_udp2raw-tunnel/compile.34/</link>
+      <pubDate>Sun, 31 Oct 2021 01:47:40 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_packages_udp2raw-tunnel/compile.34/</guid>
+      <description>build number: 34
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/packages/udp2raw-tunnel/compile -j$(nproc) || make package/feeds/packages/udp2raw-tunnel/compile V=s Compile.txt + curl -f --connect-timeout 20 --retry 5 --location --insecure https://codeload.github.com/wangyu-/udp2raw-tunnel/tar.gz/20200818.0?/udp2raw-tunnel-20200818.0.tar.gz % Total % Received % Xferd Average Speed Time Time Time Current Dload Upload Total Spent Left Speed 0 0 0 0 0 0 0 0 --:--:-- --:--:-- --:--:-- 0 100 13200 0 13200 0 0 122k 0 --:--:-- --:--:-- --:--:-- 121k 100 1837k 0 1837k 0 0 8278k 0 --:--:-- --:--:-- --:--:-- 8241k Hash of the downloaded file does not match (file: 1e5bf4eb7b7ad94f4cf358614ecc6d7069409486220aa6d080a56ecab2fc2cd8, requested: 712b0cb819555cb374206e95005b0ca6b4af86c74d572e0570630f67dfeea313) - deleting download.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -6,7 +6,7 @@
     <description>Recent content in ssl on Opde Issues Tracker</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Jul 2021 16:59:19 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 Nov 2021 16:08:43 +0000</lastBuildDate>
     
 	<atom:link href="https://immortalwrt.github.io/opde/ath79/generic/package_feeds_packages_mosquitto/ssl/index.xml" rel="self" type="application/rss+xml" />
     
@@ -29,6 +29,26 @@ re-implement command docker pull elonh/opde:sdk docker run -it --rm elonh/opde:s
       <guid>https://immortalwrt.github.io/opde/ath79/generic/package_feeds_packages_mosquitto/ssl/compile.37/</guid>
       <description>build number: 37
 re-implement command docker pull elonh/opde:sdk docker run -it --rm elonh/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/packages/mosquitto/compile -j$(nproc) || make package/feeds/packages/mosquitto/compile V=s Compile.txt make[4]: Entering directory &amp;#39;/openwrt/build_dir/target-mips_24kc_musl/mosquitto-ssl/mosquitto-2.0.11&amp;#39; set -e; for d in lib apps client plugins src; do make -C ${d}; done make[5]: Entering directory &amp;#39;/openwrt/build_dir/target-mips_24kc_musl/mosquitto-ssl/mosquitto-2.0.11/lib&amp;#39; ccache_cc -I. -I.. -I.</description>
+    </item>
+    
+    <item>
+      <title>compile.36</title>
+      <link>https://immortalwrt.github.io/opde/ath79/generic/package_feeds_packages_mosquitto/ssl/compile.36/</link>
+      <pubDate>Sat, 27 Nov 2021 16:08:43 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/ath79/generic/package_feeds_packages_mosquitto/ssl/compile.36/</guid>
+      <description>build number: 36
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/packages/mosquitto/compile -j$(nproc) || make package/feeds/packages/mosquitto/compile V=s Compile.txt make[4]: Entering directory &amp;#39;/openwrt/build_dir/target-mips_24kc_musl/mosquitto-ssl/mosquitto-2.0.13&amp;#39; set -e; for d in lib apps client plugins src; do make -C ${d}; done make[5]: Entering directory &amp;#39;/openwrt/build_dir/target-mips_24kc_musl/mosquitto-ssl/mosquitto-2.0.13/lib&amp;#39; ccache_cc -I. -I.. -I.</description>
+    </item>
+    
+    <item>
+      <title>compile.35</title>
+      <link>https://immortalwrt.github.io/opde/ath79/generic/package_feeds_packages_mosquitto/ssl/compile.35/</link>
+      <pubDate>Sun, 14 Nov 2021 19:13:19 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/ath79/generic/package_feeds_packages_mosquitto/ssl/compile.35/</guid>
+      <description>build number: 35
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/packages/mosquitto/compile -j$(nproc) || make package/feeds/packages/mosquitto/compile V=s Compile.txt make[4]: Entering directory &amp;#39;/openwrt/build_dir/target-mips_24kc_musl/mosquitto-ssl/mosquitto-2.0.13&amp;#39; set -e; for d in lib apps client plugins src; do make -C ${d}; done make[5]: Entering directory &amp;#39;/openwrt/build_dir/target-mips_24kc_musl/mosquitto-ssl/mosquitto-2.0.13/lib&amp;#39; ccache_cc -I. -I.. -I.</description>
     </item>
     
     <item>

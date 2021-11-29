@@ -1,6 +1,6 @@
 ---
 title: "package_feeds_packages_irssi"
-date: 2021-06-29 09:35:34.995524
+date: 2021-10-30 22:26:33.113614
 hidden: false
 draft: false
 ---

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>package_feeds_packages_memcached on Opde Issues Tracker</title>
+    <link>https://immortalwrt.github.io/opde/x86/64/package_feeds_packages_memcached/</link>
+    <description>Recent content in package_feeds_packages_memcached on Opde Issues Tracker</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 12 Oct 2021 22:47:46 +0000</lastBuildDate>
+    
+	<atom:link href="https://immortalwrt.github.io/opde/x86/64/package_feeds_packages_memcached/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>compile.32</title>
+      <link>https://immortalwrt.github.io/opde/x86/64/package_feeds_packages_memcached/compile.32/</link>
+      <pubDate>Tue, 12 Oct 2021 22:47:46 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/x86/64/package_feeds_packages_memcached/compile.32/</guid>
+      <description>build number: 32
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/packages/memcached/compile -j$(nproc) || make package/feeds/packages/memcached/compile V=s Compile.txt Applying ./patches/100-fix_iov_max.patch using plaintext: patching file memcached.c Hunk #1 succeeded at 13 with fuzz 2. Hunk #2 FAILED at 34. 1 out of 2 hunks FAILED -- saving rejects to file memcached.</description>
+    </item>
+    
+    <item>
+      <title>compile.27</title>
+      <link>https://immortalwrt.github.io/opde/x86/64/package_feeds_packages_memcached/compile.27/</link>
+      <pubDate>Wed, 06 Oct 2021 21:55:16 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/x86/64/package_feeds_packages_memcached/compile.27/</guid>
+      <description>build number: 27
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/packages/memcached/compile -j$(nproc) || make package/feeds/packages/memcached/compile V=s Compile.txt Applying ./patches/100-fix_iov_max.patch using plaintext: patching file memcached.c Hunk #1 succeeded at 13 with fuzz 2. Hunk #2 FAILED at 34. 1 out of 2 hunks FAILED -- saving rejects to file memcached.</description>
+    </item>
+    
+    <item>
+      <title>compile.25</title>
+      <link>https://immortalwrt.github.io/opde/x86/64/package_feeds_packages_memcached/compile.25/</link>
+      <pubDate>Fri, 10 Sep 2021 11:12:32 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/x86/64/package_feeds_packages_memcached/compile.25/</guid>
+      <description>build number: 25
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/packages/memcached/compile -j$(nproc) || make package/feeds/packages/memcached/compile V=s Compile.txt Applying ./patches/100-fix_iov_max.patch using plaintext: patching file memcached.c Hunk #1 succeeded at 13 with fuzz 2. Hunk #2 FAILED at 34. 1 out of 2 hunks FAILED -- saving rejects to file memcached.</description>
+    </item>
+    
+    <item>
+      <title>compile.20</title>
+      <link>https://immortalwrt.github.io/opde/x86/64/package_feeds_packages_memcached/compile.20/</link>
+      <pubDate>Thu, 19 Aug 2021 01:46:57 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/x86/64/package_feeds_packages_memcached/compile.20/</guid>
+      <description>build number: 20
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/packages/memcached/compile -j$(nproc) || make package/feeds/packages/memcached/compile V=s Compile.txt Applying ./patches/100-fix_iov_max.patch using plaintext: patching file memcached.c Hunk #1 succeeded at 13 with fuzz 2. Hunk #2 FAILED at 34. 1 out of 2 hunks FAILED -- saving rejects to file memcached.</description>
+    </item>
+    
+  </channel>
+</rss>

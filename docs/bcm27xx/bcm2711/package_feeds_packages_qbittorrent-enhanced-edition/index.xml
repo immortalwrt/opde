@@ -6,10 +6,20 @@
     <description>Recent content in package_feeds_packages_qBittorrent-Enhanced-Edition on Opde Issues Tracker</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 03 Jun 2021 07:33:23 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 30 Oct 2021 22:27:08 +0000</lastBuildDate>
     
 	<atom:link href="https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_qbittorrent-enhanced-edition/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>compile.33</title>
+      <link>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_qbittorrent-enhanced-edition/compile.33/</link>
+      <pubDate>Sat, 30 Oct 2021 22:27:08 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_qbittorrent-enhanced-edition/compile.33/</guid>
+      <description>build number: 33
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/packages/qBittorrent-Enhanced-Edition/compile -j$(nproc) || make package/feeds/packages/qBittorrent-Enhanced-Edition/compile V=s Compile.txt Applying ./patches/001-remove-host-include-dir.patch using plaintext: patching file conf.pri.in Applying ./patches/100-use-original-user-agent.patch using plaintext: patching file src/base/bittorrent/session.cpp configure: WARNING: unrecognized options: --disable-nls configure: loading site script /openwrt/include/site/aarch64 checking for aarch64-openwrt-linux-gcc.</description>
+    </item>
     
     <item>
       <title>compile.27</title>
@@ -29,6 +39,16 @@ re-implement command docker pull elonh/opde:sdk docker run -it --rm elonh/opde:s
       <guid>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_qbittorrent-enhanced-edition/compile.24/</guid>
       <description>build number: 24
 re-implement command docker pull elonh/opde:sdk docker run -it --rm elonh/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/packages/qBittorrent-Enhanced-Edition/compile -j$(nproc) || make package/feeds/packages/qBittorrent-Enhanced-Edition/compile V=s Compile.txt configure: WARNING: unrecognized options: --disable-nls configure: loading site script /openwrt/include/site/aarch64 checking for aarch64-openwrt-linux-gcc... ccache_cc checking whether the C compiler works... yes checking for C compiler default output file name.</description>
+    </item>
+    
+    <item>
+      <title>compile.21</title>
+      <link>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_qbittorrent-enhanced-edition/compile.21/</link>
+      <pubDate>Thu, 19 Aug 2021 19:50:37 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/bcm27xx/bcm2711/package_feeds_packages_qbittorrent-enhanced-edition/compile.21/</guid>
+      <description>build number: 21
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/packages/qBittorrent-Enhanced-Edition/compile -j$(nproc) || make package/feeds/packages/qBittorrent-Enhanced-Edition/compile V=s Compile.txt Applying ./patches/001-remove-host-include-dir.patch using plaintext: patching file conf.pri.in configure: WARNING: unrecognized options: --disable-nls configure: loading site script /openwrt/include/site/aarch64 checking for aarch64-openwrt-linux-gcc... ccache_cc checking whether the C compiler works.</description>
     </item>
     
     <item>

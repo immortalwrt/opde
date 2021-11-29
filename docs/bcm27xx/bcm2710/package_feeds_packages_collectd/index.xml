@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>package_feeds_packages_collectd on Opde Issues Tracker</title>
+    <link>https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_packages_collectd/</link>
+    <description>Recent content in package_feeds_packages_collectd on Opde Issues Tracker</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 31 Oct 2021 01:46:36 +0000</lastBuildDate>
+    
+	<atom:link href="https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_packages_collectd/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>compile.34</title>
+      <link>https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_packages_collectd/compile.34/</link>
+      <pubDate>Sun, 31 Oct 2021 01:46:36 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_packages_collectd/compile.34/</guid>
+      <description>build number: 34
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/packages/collectd/compile -j$(nproc) || make package/feeds/packages/collectd/compile V=s Compile.txt Applying ./patches/001-undefined-AM_PATH_LIBGCRYPT.patch using plaintext: patching file fake-am_path_libgcrypt.m4 Applying ./patches/100-rrdtool-add-rrasingle-option.patch using plaintext: patching file src/rrdtool.c patching file src/utils/rrdcreate/rrdcreate.c patching file src/utils/rrdcreate/rrdcreate.h Applying ./patches/140-fix-fqdnlookup.patch using plaintext: patching file src/daemon/configfile.</description>
+    </item>
+    
+    <item>
+      <title>compile.23</title>
+      <link>https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_packages_collectd/compile.23/</link>
+      <pubDate>Fri, 27 Aug 2021 07:29:54 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_packages_collectd/compile.23/</guid>
+      <description>build number: 23
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/packages/collectd/compile -j$(nproc) || make package/feeds/packages/collectd/compile V=s Compile.txt Applying ./patches/001-undefined-AM_PATH_LIBGCRYPT.patch using plaintext: patching file fake-am_path_libgcrypt.m4 Applying ./patches/100-rrdtool-add-rrasingle-option.patch using plaintext: patching file src/rrdtool.c patching file src/utils/rrdcreate/rrdcreate.c patching file src/utils/rrdcreate/rrdcreate.h Applying ./patches/140-fix-fqdnlookup.patch using plaintext: patching file src/daemon/configfile.</description>
+    </item>
+    
+    <item>
+      <title>compile.22</title>
+      <link>https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_packages_collectd/compile.22/</link>
+      <pubDate>Fri, 20 Aug 2021 09:28:10 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_packages_collectd/compile.22/</guid>
+      <description>build number: 22
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/packages/collectd/compile -j$(nproc) || make package/feeds/packages/collectd/compile V=s Compile.txt Applying ./patches/001-undefined-AM_PATH_LIBGCRYPT.patch using plaintext: patching file fake-am_path_libgcrypt.m4 Applying ./patches/100-rrdtool-add-rrasingle-option.patch using plaintext: patching file src/rrdtool.c patching file src/utils/rrdcreate/rrdcreate.c patching file src/utils/rrdcreate/rrdcreate.h Applying ./patches/140-fix-fqdnlookup.patch using plaintext: patching file src/daemon/configfile.</description>
+    </item>
+    
+  </channel>
+</rss>

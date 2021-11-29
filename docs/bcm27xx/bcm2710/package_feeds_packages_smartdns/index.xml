@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>package_feeds_packages_smartdns on Opde Issues Tracker</title>
+    <link>https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_packages_smartdns/</link>
+    <description>Recent content in package_feeds_packages_smartdns on Opde Issues Tracker</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 31 Oct 2021 01:47:40 +0000</lastBuildDate>
+    
+	<atom:link href="https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_packages_smartdns/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>compile.34</title>
+      <link>https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_packages_smartdns/compile.34/</link>
+      <pubDate>Sun, 31 Oct 2021 01:47:40 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_packages_smartdns/compile.34/</guid>
+      <description>build number: 34
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/packages/smartdns/compile -j$(nproc) || make package/feeds/packages/smartdns/compile V=s Compile.txt make[4]: Entering directory &amp;#39;/openwrt/build_dir/target-aarch64_cortex-a53_musl/smartdns-1.2021.35/src&amp;#39; ccache_cc -Os -pipe -mcpu=cortex-a53 -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -fmacro-prefix-map=/openwrt/build_dir/target-aarch64_cortex-a53_musl/smartdns-1.2021.35=smartdns-1.2021.35 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -I/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-8.4.0_musl/usr/include -I/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-8.4.0_musl/include/fortify -I/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-8.4.0_musl/include -Iinclude -DBASE_FILE_NAME=\&amp;#34;smartdns.c\&amp;#34; -DSMARTDNS_VERION=\&amp;#34;1.2021.35\&amp;#34; -c -o smartdns.</description>
+    </item>
+    
+    <item>
+      <title>compile.23</title>
+      <link>https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_packages_smartdns/compile.23/</link>
+      <pubDate>Fri, 27 Aug 2021 07:23:17 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_packages_smartdns/compile.23/</guid>
+      <description>build number: 23
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/packages/smartdns/compile -j$(nproc) || make package/feeds/packages/smartdns/compile V=s Compile.txt make[4]: Entering directory &amp;#39;/openwrt/build_dir/target-aarch64_cortex-a53_musl/smartdns-1.2021.24/src&amp;#39; ccache_cc -Os -pipe -mcpu=cortex-a53 -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -fmacro-prefix-map=/openwrt/build_dir/target-aarch64_cortex-a53_musl/smartdns-1.2021.24=smartdns-1.2021.24 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -I/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-8.4.0_musl/usr/include -I/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-8.4.0_musl/include/fortify -I/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-8.4.0_musl/include -Iinclude -DBASE_FILE_NAME=\&amp;#34;smartdns.c\&amp;#34; -DSMARTDNS_VERION=\&amp;#34;1.2021.24\&amp;#34; -c -o smartdns.</description>
+    </item>
+    
+    <item>
+      <title>compile.22</title>
+      <link>https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_packages_smartdns/compile.22/</link>
+      <pubDate>Fri, 20 Aug 2021 09:28:58 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_packages_smartdns/compile.22/</guid>
+      <description>build number: 22
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/packages/smartdns/compile -j$(nproc) || make package/feeds/packages/smartdns/compile V=s Compile.txt make[4]: Entering directory &amp;#39;/openwrt/build_dir/target-aarch64_cortex-a53_musl/smartdns-1.2021.24/src&amp;#39; ccache_cc -Os -pipe -mcpu=cortex-a53 -fno-caller-saves -fno-plt -fhonour-copts -Wno-error=unused-but-set-variable -Wno-error=unused-result -fmacro-prefix-map=/openwrt/build_dir/target-aarch64_cortex-a53_musl/smartdns-1.2021.24=smartdns-1.2021.24 -Wformat -Werror=format-security -fstack-protector -D_FORTIFY_SOURCE=1 -Wl,-z,now -Wl,-z,relro -I/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-8.4.0_musl/usr/include -I/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-8.4.0_musl/include/fortify -I/openwrt/staging_dir/toolchain-aarch64_cortex-a53_gcc-8.4.0_musl/include -Iinclude -DBASE_FILE_NAME=\&amp;#34;smartdns.c\&amp;#34; -DSMARTDNS_VERION=\&amp;#34;1.2021.24\&amp;#34; -c -o smartdns.</description>
+    </item>
+    
+  </channel>
+</rss>

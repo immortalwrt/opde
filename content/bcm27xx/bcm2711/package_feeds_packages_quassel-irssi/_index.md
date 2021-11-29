@@ -1,6 +1,6 @@
 ---
 title: "package_feeds_packages_quassel-irssi"
-date: 2021-06-29 09:35:35.007692
+date: 2021-10-30 22:26:33.103523
 hidden: false
 draft: false
 ---

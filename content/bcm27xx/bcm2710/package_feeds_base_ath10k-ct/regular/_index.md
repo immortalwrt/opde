@@ -1,6 +1,6 @@
 ---
 title: "regular"
-date: 2021-06-30 21:10:43.440248
+date: 2021-10-31 01:47:40.310840
 hidden: false
 draft: false
 ---

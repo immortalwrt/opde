@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>package_feeds_packages_node on Opde Issues Tracker</title>
+    <link>https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_packages_node/</link>
+    <description>Recent content in package_feeds_packages_node on Opde Issues Tracker</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 31 Oct 2021 01:47:40 +0000</lastBuildDate>
+    
+	<atom:link href="https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_packages_node/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>compile.34</title>
+      <link>https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_packages_node/compile.34/</link>
+      <pubDate>Sun, 31 Oct 2021 01:47:40 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_packages_node/compile.34/</guid>
+      <description>build number: 34
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/packages/node/compile -j$(nproc) || make package/feeds/packages/node/compile V=s Compile.txt Applying ./patches/v16.x/003-path.patch using plaintext: patching file lib/internal/modules/cjs/loader.js Applying ./patches/v16.x/004-musl_support.patch using plaintext: patching file deps/v8/src/base/platform/condition-variable.cc patching file deps/v8/src/base/platform/platform-posix.cc patching file deps/v8/src/codegen/external-reference-table.cc Applying ./patches/v16.x/007-fix_host_build_on_macos.patch using plaintext: patching file tools/gyp/pylib/gyp/generator/make.</description>
+    </item>
+    
+    <item>
+      <title>compile.23</title>
+      <link>https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_packages_node/compile.23/</link>
+      <pubDate>Fri, 27 Aug 2021 07:29:15 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_packages_node/compile.23/</guid>
+      <description>build number: 23
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/packages/node/compile -j$(nproc) || make package/feeds/packages/node/compile V=s Compile.txt Applying ./patches/v14.x/003-path.patch using plaintext: patching file lib/internal/modules/cjs/loader.js Applying ./patches/v14.x/004-musl_support.patch using plaintext: patching file deps/v8/src/base/platform/condition-variable.cc patching file deps/v8/src/base/platform/platform-posix.cc patching file deps/v8/src/codegen/external-reference-table.cc Applying ./patches/v14.x/007-fix_host_build_on_macos.patch using plaintext: patching file tools/gyp/pylib/gyp/generator/make.</description>
+    </item>
+    
+    <item>
+      <title>compile.22</title>
+      <link>https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_packages_node/compile.22/</link>
+      <pubDate>Fri, 20 Aug 2021 09:33:12 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/bcm27xx/bcm2710/package_feeds_packages_node/compile.22/</guid>
+      <description>build number: 22
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/packages/node/compile -j$(nproc) || make package/feeds/packages/node/compile V=s Compile.txt Applying ./patches/v14.x/003-path.patch using plaintext: patching file lib/internal/modules/cjs/loader.js Applying ./patches/v14.x/004-musl_support.patch using plaintext: patching file deps/v8/src/base/platform/condition-variable.cc patching file deps/v8/src/base/platform/platform-posix.cc patching file deps/v8/src/codegen/external-reference-table.cc Applying ./patches/v14.x/007-fix_host_build_on_macos.patch using plaintext: patching file tools/gyp/pylib/gyp/generator/make.</description>
+    </item>
+    
+  </channel>
+</rss>

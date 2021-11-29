@@ -6,10 +6,40 @@
     <description>Recent content in package_feeds_base_wireguard on Opde Issues Tracker</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 26 May 2021 12:45:38 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 Oct 2021 22:50:16 +0000</lastBuildDate>
     
 	<atom:link href="https://immortalwrt.github.io/opde/x86/64/package_feeds_base_wireguard/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>compile.32</title>
+      <link>https://immortalwrt.github.io/opde/x86/64/package_feeds_base_wireguard/compile.32/</link>
+      <pubDate>Tue, 12 Oct 2021 22:50:16 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/x86/64/package_feeds_base_wireguard/compile.32/</guid>
+      <description>build number: 32
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/base/wireguard/compile -j$(nproc) || make package/feeds/base/wireguard/compile V=s Compile.txt make[4]: Entering directory &amp;#39;/openwrt/build_dir/target-x86_64_musl/linux-x86_64/linux-4.19.209&amp;#39; CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210606/src/main.o CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210606/src/noise.o CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210606/src/device.o CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210606/src/peer.o CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210606/src/timers.o CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210606/src/queueing.o CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210606/src/send.o CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.</description>
+    </item>
+    
+    <item>
+      <title>compile.27</title>
+      <link>https://immortalwrt.github.io/opde/x86/64/package_feeds_base_wireguard/compile.27/</link>
+      <pubDate>Wed, 06 Oct 2021 21:55:16 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/x86/64/package_feeds_base_wireguard/compile.27/</guid>
+      <description>build number: 27
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/base/wireguard/compile -j$(nproc) || make package/feeds/base/wireguard/compile V=s Compile.txt make[4]: Entering directory &amp;#39;/openwrt/build_dir/target-x86_64_musl/linux-x86_64/linux-4.19.206&amp;#39; CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210606/src/main.o CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210606/src/noise.o CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210606/src/device.o CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210606/src/peer.o CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210606/src/timers.o CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210606/src/queueing.o CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210606/src/send.o CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.</description>
+    </item>
+    
+    <item>
+      <title>compile.25</title>
+      <link>https://immortalwrt.github.io/opde/x86/64/package_feeds_base_wireguard/compile.25/</link>
+      <pubDate>Fri, 10 Sep 2021 11:14:10 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/x86/64/package_feeds_base_wireguard/compile.25/</guid>
+      <description>build number: 25
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/base/wireguard/compile -j$(nproc) || make package/feeds/base/wireguard/compile V=s Compile.txt make[4]: Entering directory &amp;#39;/openwrt/build_dir/target-x86_64_musl/linux-x86_64/linux-4.19.206&amp;#39; CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210606/src/main.o CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210606/src/noise.o CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210606/src/device.o CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210606/src/peer.o CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210606/src/timers.o CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210606/src/queueing.o CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210606/src/send.o CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.</description>
+    </item>
     
     <item>
       <title>compile.22</title>
@@ -29,6 +59,16 @@ re-implement command docker pull elonh/opde:sdk docker run -it --rm elonh/opde:s
       <guid>https://immortalwrt.github.io/opde/x86/64/package_feeds_base_wireguard/compile.21/</guid>
       <description>build number: 21
 re-implement command docker pull elonh/opde:sdk docker run -it --rm elonh/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/base/wireguard/compile -j$(nproc) || make package/feeds/base/wireguard/compile V=s Compile.txt make[4]: Entering directory &amp;#39;/openwrt/build_dir/target-x86_64_musl/linux-x86_64/linux-5.4.117&amp;#39; CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210219/src/main.o In file included from &amp;lt;command-line&amp;gt;: ./../wireguard-linux-compat-1.0.20210219/src/compat/compat.h:1059:22: error: static declaration of &amp;#39;ip_tunnel_parse_protocol&amp;#39; follows non-static declaration static inline __be16 ip_tunnel_parse_protocol(const struct sk_buff *skb) ^~~~~~~~~~~~~~~~~~~~~~~~ In file included from .</description>
+    </item>
+    
+    <item>
+      <title>compile.20</title>
+      <link>https://immortalwrt.github.io/opde/x86/64/package_feeds_base_wireguard/compile.20/</link>
+      <pubDate>Thu, 19 Aug 2021 01:46:57 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/x86/64/package_feeds_base_wireguard/compile.20/</guid>
+      <description>build number: 20
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/base/wireguard/compile -j$(nproc) || make package/feeds/base/wireguard/compile V=s Compile.txt make[4]: Entering directory &amp;#39;/openwrt/build_dir/target-x86_64_musl/linux-x86_64/linux-4.19.204&amp;#39; CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210606/src/main.o CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210606/src/noise.o CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210606/src/device.o CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210606/src/peer.o CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210606/src/timers.o CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210606/src/queueing.o CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.0.20210606/src/send.o CC [M] /openwrt/build_dir/target-x86_64_musl/linux-x86_64/wireguard-linux-compat-1.</description>
     </item>
     
     <item>

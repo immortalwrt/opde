@@ -6,7 +6,7 @@
     <description>Recent content in supplicant-full-openssl on Opde Issues Tracker</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Jul 2021 17:02:17 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 Nov 2021 16:08:43 +0000</lastBuildDate>
     
 	<atom:link href="https://immortalwrt.github.io/opde/ath79/generic/package_feeds_base_hostapd/supplicant-full-openssl/index.xml" rel="self" type="application/rss+xml" />
     
@@ -29,6 +29,26 @@ re-implement command docker pull elonh/opde:sdk docker run -it --rm elonh/opde:s
       <guid>https://immortalwrt.github.io/opde/ath79/generic/package_feeds_base_hostapd/supplicant-full-openssl/compile.37/</guid>
       <description>build number: 37
 re-implement command docker pull elonh/opde:sdk docker run -it --rm elonh/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/base/hostapd/compile -j$(nproc) || make package/feeds/base/hostapd/compile V=s Compile.txt Makefile:707: WARNING: skipping hostapd-utils -- package has no install section make[4]: Entering directory &amp;#39;/openwrt/build_dir/target-mips_24kc_musl/hostapd-supplicant-full-openssl/hostapd-2021-05-22-b102f19b/wpa_supplicant&amp;#39; LD wpa_cli ../src/crypto/tls_openssl.c:19:10: fatal error: openssl/ssl.h: No such file or directory #include &amp;lt;openssl/ssl.</description>
+    </item>
+    
+    <item>
+      <title>compile.36</title>
+      <link>https://immortalwrt.github.io/opde/ath79/generic/package_feeds_base_hostapd/supplicant-full-openssl/compile.36/</link>
+      <pubDate>Sat, 27 Nov 2021 16:08:43 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/ath79/generic/package_feeds_base_hostapd/supplicant-full-openssl/compile.36/</guid>
+      <description>build number: 36
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/base/hostapd/compile -j$(nproc) || make package/feeds/base/hostapd/compile V=s Compile.txt Makefile:710: WARNING: skipping hostapd-utils -- package has no install section make[4]: Entering directory &amp;#39;/openwrt/build_dir/target-mips_24kc_musl/hostapd-supplicant-full-openssl/hostapd-2021-05-22-b102f19b/wpa_supplicant&amp;#39; LD wpa_cli ../src/crypto/tls_openssl.c:19:10: fatal error: openssl/ssl.h: No such file or directory #include &amp;lt;openssl/ssl.</description>
+    </item>
+    
+    <item>
+      <title>compile.35</title>
+      <link>https://immortalwrt.github.io/opde/ath79/generic/package_feeds_base_hostapd/supplicant-full-openssl/compile.35/</link>
+      <pubDate>Sun, 14 Nov 2021 19:08:51 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/ath79/generic/package_feeds_base_hostapd/supplicant-full-openssl/compile.35/</guid>
+      <description>build number: 35
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/base/hostapd/compile -j$(nproc) || make package/feeds/base/hostapd/compile V=s Compile.txt make[4]: Entering directory &amp;#39;/openwrt/build_dir/target-mips_24kc_musl/hostapd-supplicant-full-openssl/hostapd-2021-05-22-b102f19b/wpa_supplicant&amp;#39; LD wpa_cli ../src/crypto/tls_openssl.c:19:10: fatal error: openssl/ssl.h: No such file or directory #include &amp;lt;openssl/ssl.h&amp;gt; ^~~~~~~~~~~~~~~ compilation terminated. make[4]: *** [../src/build.rules:86: /openwrt/build_dir/target-mips_24kc_musl/hostapd-supplicant-full-openssl/hostapd-2021-05-22-b102f19b/build/wpa_supplicant/src/crypto/tls_openssl.o] Error 1 make[4]: Leaving directory &amp;#39;/openwrt/build_dir/target-mips_24kc_musl/hostapd-supplicant-full-openssl/hostapd-2021-05-22-b102f19b/wpa_supplicant&amp;#39; make[3]: *** [Makefile:685: /openwrt/build_dir/target-mips_24kc_musl/hostapd-supplicant-full-openssl/hostapd-2021-05-22-b102f19b/.</description>
     </item>
     
     <item>

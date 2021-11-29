@@ -6,7 +6,7 @@
     <description>Recent content in package_feeds_packages_python-cffi on Opde Issues Tracker</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Jul 2021 17:06:20 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 27 Nov 2021 16:04:43 +0000</lastBuildDate>
     
 	<atom:link href="https://immortalwrt.github.io/opde/ath79/generic/package_feeds_packages_python-cffi/index.xml" rel="self" type="application/rss+xml" />
     
@@ -29,6 +29,26 @@ re-implement command docker pull elonh/opde:sdk docker run -it --rm elonh/opde:s
       <guid>https://immortalwrt.github.io/opde/ath79/generic/package_feeds_packages_python-cffi/compile.37/</guid>
       <description>build number: 37
 re-implement command docker pull elonh/opde:sdk docker run -it --rm elonh/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/packages/python-cffi/compile -j$(nproc) || make package/feeds/packages/python-cffi/compile V=s Compile.txt running install running build running build_py creating build creating build/lib.-3.9 creating build/lib.-3.9/cffi copying cffi/backend_ctypes.py -&amp;gt; build/lib.-3.9/cffi copying cffi/commontypes.py -&amp;gt; build/lib.-3.9/cffi copying cffi/verifier.py -&amp;gt; build/lib.-3.9/cffi copying cffi/error.py -&amp;gt; build/lib.</description>
+    </item>
+    
+    <item>
+      <title>compile.36</title>
+      <link>https://immortalwrt.github.io/opde/ath79/generic/package_feeds_packages_python-cffi/compile.36/</link>
+      <pubDate>Sat, 27 Nov 2021 16:04:43 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/ath79/generic/package_feeds_packages_python-cffi/compile.36/</guid>
+      <description>build number: 36
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/packages/python-cffi/compile -j$(nproc) || make package/feeds/packages/python-cffi/compile V=s Compile.txt /openwrt/build_dir/target-mips_24kc_musl/pypi/cffi-1.15.0/setup.py:69: DeprecationWarning: The distutils.sysconfig module is deprecated, use sysconfig instead from distutils.sysconfig import get_config_vars running install running build running build_py creating build creating build/lib.-3.10 creating build/lib.-3.10/cffi copying cffi/__init__.</description>
+    </item>
+    
+    <item>
+      <title>compile.35</title>
+      <link>https://immortalwrt.github.io/opde/ath79/generic/package_feeds_packages_python-cffi/compile.35/</link>
+      <pubDate>Sun, 14 Nov 2021 19:13:19 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/ath79/generic/package_feeds_packages_python-cffi/compile.35/</guid>
+      <description>build number: 35
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/packages/python-cffi/compile -j$(nproc) || make package/feeds/packages/python-cffi/compile V=s Compile.txt running install running build running build_py creating build creating build/lib.-3.9 creating build/lib.-3.9/cffi copying cffi/vengine_gen.py -&amp;gt; build/lib.-3.9/cffi copying cffi/cffi_opcode.py -&amp;gt; build/lib.-3.9/cffi copying cffi/pkgconfig.py -&amp;gt; build/lib.-3.9/cffi copying cffi/vengine_cpy.py -&amp;gt; build/lib.</description>
     </item>
     
     <item>

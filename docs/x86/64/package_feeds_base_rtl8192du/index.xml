@@ -6,7 +6,7 @@
     <description>Recent content in package_feeds_base_rtl8192du on Opde Issues Tracker</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 30 Jun 2021 01:04:52 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 10 Sep 2021 11:13:51 +0000</lastBuildDate>
     
 	<atom:link href="https://immortalwrt.github.io/opde/x86/64/package_feeds_base_rtl8192du/index.xml" rel="self" type="application/rss+xml" />
     
@@ -84,11 +84,21 @@ re-implement command docker pull elonh/opde:sdk docker run -it --rm elonh/opde:s
     <item>
       <title>compile.25</title>
       <link>https://immortalwrt.github.io/opde/x86/64/package_feeds_base_rtl8192du/compile.25/</link>
-      <pubDate>Sun, 30 May 2021 21:32:33 +0000</pubDate>
+      <pubDate>Fri, 10 Sep 2021 11:13:51 +0000</pubDate>
       
       <guid>https://immortalwrt.github.io/opde/x86/64/package_feeds_base_rtl8192du/compile.25/</guid>
       <description>build number: 25
-re-implement command docker pull elonh/opde:sdk docker run -it --rm elonh/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/base/rtl8192du/compile -j$(nproc) || make package/feeds/base/rtl8192du/compile V=s Compile.txt Applying ./patches/010-missing-header-in-ipv6.patch using plaintext: patching file core/rtw_br_ext.c Applying ./patches/020-wireless-5.8.patch using plaintext: patching file os_dep/ioctl_cfg80211.c make[3]: *** No rule to make target &amp;#39;/openwrt/staging_dir/target-x86_64_musl/usr/include/mac80211-backport/backport/autoconf.h&amp;#39;, needed by &amp;#39;/openwrt/build_dir/target-x86_64_musl/linux-x86_64/rtl8192du-2020-12-12-331ec03d/.configured_68b329da9893e34099c7d8ad5cb9c940&amp;#39;. Stop. </description>
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/base/rtl8192du/compile -j$(nproc) || make package/feeds/base/rtl8192du/compile V=s Compile.txt Applying ./patches/010-missing-header-in-ipv6.patch using plaintext: patching file core/rtw_br_ext.c make[3]: *** No rule to make target &amp;#39;/openwrt/staging_dir/target-x86_64_musl/usr/include/mac80211-backport/backport/autoconf.h&amp;#39;, needed by &amp;#39;/openwrt/build_dir/target-x86_64_musl/linux-x86_64/rtl8192du-2019-06-01-54c95aaa/.configured_68b329da9893e34099c7d8ad5cb9c940&amp;#39;. Stop. </description>
+    </item>
+    
+    <item>
+      <title>compile.24</title>
+      <link>https://immortalwrt.github.io/opde/x86/64/package_feeds_base_rtl8192du/compile.24/</link>
+      <pubDate>Wed, 01 Sep 2021 09:41:08 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/x86/64/package_feeds_base_rtl8192du/compile.24/</guid>
+      <description>build number: 24
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/base/rtl8192du/compile -j$(nproc) || make package/feeds/base/rtl8192du/compile V=s Compile.txt Applying ./patches/010-missing-header-in-ipv6.patch using plaintext: patching file core/rtw_br_ext.c Applying ./patches/020-wireless-5.8.patch using plaintext: patching file os_dep/ioctl_cfg80211.c make[3]: *** No rule to make target &amp;#39;/openwrt/staging_dir/target-x86_64_musl/usr/include/mac80211-backport/backport/autoconf.h&amp;#39;, needed by &amp;#39;/openwrt/build_dir/target-x86_64_musl/linux-x86_64/rtl8192du-2020-12-12-331ec03d/.configured_68b329da9893e34099c7d8ad5cb9c940&amp;#39;. Stop. </description>
     </item>
     
     <item>
@@ -122,6 +132,16 @@ re-implement command docker pull elonh/opde:sdk docker run -it --rm elonh/opde:s
     </item>
     
     <item>
+      <title>compile.20</title>
+      <link>https://immortalwrt.github.io/opde/x86/64/package_feeds_base_rtl8192du/compile.20/</link>
+      <pubDate>Thu, 19 Aug 2021 01:48:38 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/x86/64/package_feeds_base_rtl8192du/compile.20/</guid>
+      <description>build number: 20
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/base/rtl8192du/compile -j$(nproc) || make package/feeds/base/rtl8192du/compile V=s Compile.txt Applying ./patches/010-missing-header-in-ipv6.patch using plaintext: patching file core/rtw_br_ext.c make[3]: *** No rule to make target &amp;#39;/openwrt/staging_dir/target-x86_64_musl/usr/include/mac80211-backport/backport/autoconf.h&amp;#39;, needed by &amp;#39;/openwrt/build_dir/target-x86_64_musl/linux-x86_64/rtl8192du-2019-06-01-54c95aaa/.configured_68b329da9893e34099c7d8ad5cb9c940&amp;#39;. Stop. </description>
+    </item>
+    
+    <item>
       <title>compile.19</title>
       <link>https://immortalwrt.github.io/opde/x86/64/package_feeds_base_rtl8192du/compile.19/</link>
       <pubDate>Sat, 15 May 2021 01:44:27 +0000</pubDate>
@@ -129,6 +149,26 @@ re-implement command docker pull elonh/opde:sdk docker run -it --rm elonh/opde:s
       <guid>https://immortalwrt.github.io/opde/x86/64/package_feeds_base_rtl8192du/compile.19/</guid>
       <description>build number: 19
 re-implement command docker pull elonh/opde:sdk docker run -it --rm elonh/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/base/rtl8192du/compile -j$(nproc) || make package/feeds/base/rtl8192du/compile V=s Compile.txt Applying ./patches/010-missing-header-in-ipv6.patch using plaintext: patching file core/rtw_br_ext.c make[3]: *** No rule to make target &amp;#39;/openwrt/staging_dir/target-x86_64_musl/usr/include/mac80211-backport/backport/autoconf.h&amp;#39;, needed by &amp;#39;/openwrt/build_dir/target-x86_64_musl/linux-x86_64/rtl8192du-2019-06-01-54c95aaa/.configured_68b329da9893e34099c7d8ad5cb9c940&amp;#39;. Stop. </description>
+    </item>
+    
+    <item>
+      <title>compile.18</title>
+      <link>https://immortalwrt.github.io/opde/x86/64/package_feeds_base_rtl8192du/compile.18/</link>
+      <pubDate>Thu, 12 Aug 2021 23:54:35 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/x86/64/package_feeds_base_rtl8192du/compile.18/</guid>
+      <description>build number: 18
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/base/rtl8192du/compile -j$(nproc) || make package/feeds/base/rtl8192du/compile V=s Compile.txt Applying ./patches/010-missing-header-in-ipv6.patch using plaintext: patching file core/rtw_br_ext.c Applying ./patches/020-wireless-5.8.patch using plaintext: patching file os_dep/ioctl_cfg80211.c make[3]: *** No rule to make target &amp;#39;/openwrt/staging_dir/target-x86_64_musl/usr/include/mac80211-backport/backport/autoconf.h&amp;#39;, needed by &amp;#39;/openwrt/build_dir/target-x86_64_musl/linux-x86_64/rtl8192du-2020-12-12-331ec03d/.configured_68b329da9893e34099c7d8ad5cb9c940&amp;#39;. Stop. </description>
+    </item>
+    
+    <item>
+      <title>compile.17</title>
+      <link>https://immortalwrt.github.io/opde/x86/64/package_feeds_base_rtl8192du/compile.17/</link>
+      <pubDate>Wed, 11 Aug 2021 04:33:36 +0000</pubDate>
+      
+      <guid>https://immortalwrt.github.io/opde/x86/64/package_feeds_base_rtl8192du/compile.17/</guid>
+      <description>build number: 17
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/base/rtl8192du/compile -j$(nproc) || make package/feeds/base/rtl8192du/compile V=s Compile.txt Applying ./patches/010-missing-header-in-ipv6.patch using plaintext: patching file core/rtw_br_ext.c Applying ./patches/020-wireless-5.8.patch using plaintext: patching file os_dep/ioctl_cfg80211.c make[3]: *** No rule to make target &amp;#39;/openwrt/staging_dir/target-x86_64_musl/usr/include/mac80211-backport/backport/autoconf.h&amp;#39;, needed by &amp;#39;/openwrt/build_dir/target-x86_64_musl/linux-x86_64/rtl8192du-2020-12-12-331ec03d/.configured_68b329da9893e34099c7d8ad5cb9c940&amp;#39;. Stop. </description>
     </item>
     
     <item>
@@ -144,11 +184,11 @@ re-implement command docker pull elonh/opde:sdk docker run -it --rm elonh/opde:s
     <item>
       <title>compile.15</title>
       <link>https://immortalwrt.github.io/opde/x86/64/package_feeds_base_rtl8192du/compile.15/</link>
-      <pubDate>Thu, 13 May 2021 06:15:56 +0000</pubDate>
+      <pubDate>Mon, 09 Aug 2021 01:02:01 +0000</pubDate>
       
       <guid>https://immortalwrt.github.io/opde/x86/64/package_feeds_base_rtl8192du/compile.15/</guid>
       <description>build number: 15
-re-implement command docker pull elonh/opde:sdk docker run -it --rm elonh/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/base/rtl8192du/compile -j$(nproc) || make package/feeds/base/rtl8192du/compile V=s Compile.txt Applying ./patches/010-missing-header-in-ipv6.patch using plaintext: patching file core/rtw_br_ext.c make[3]: *** No rule to make target &amp;#39;/openwrt/staging_dir/target-aarch64_cortex-a72_musl/usr/include/mac80211-backport/backport/autoconf.h&amp;#39;, needed by &amp;#39;/openwrt/build_dir/target-aarch64_cortex-a72_musl/linux-bcm27xx_bcm2711/rtl8192du-2019-06-01-54c95aaa/.configured_68b329da9893e34099c7d8ad5cb9c940&amp;#39;. Stop. </description>
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/base/rtl8192du/compile -j$(nproc) || make package/feeds/base/rtl8192du/compile V=s Compile.txt Applying ./patches/010-missing-header-in-ipv6.patch using plaintext: patching file core/rtw_br_ext.c Applying ./patches/020-wireless-5.8.patch using plaintext: patching file os_dep/ioctl_cfg80211.c make[3]: *** No rule to make target &amp;#39;/openwrt/staging_dir/target-x86_64_musl/usr/include/mac80211-backport/backport/autoconf.h&amp;#39;, needed by &amp;#39;/openwrt/build_dir/target-x86_64_musl/linux-x86_64/rtl8192du-2020-12-12-331ec03d/.configured_68b329da9893e34099c7d8ad5cb9c940&amp;#39;. Stop. </description>
     </item>
     
     <item>
@@ -164,11 +204,11 @@ re-implement command docker pull elonh/opde:sdk docker run -it --rm elonh/opde:s
     <item>
       <title>compile.13</title>
       <link>https://immortalwrt.github.io/opde/x86/64/package_feeds_base_rtl8192du/compile.13/</link>
-      <pubDate>Tue, 11 May 2021 22:17:14 +0000</pubDate>
+      <pubDate>Sun, 01 Aug 2021 08:17:14 +0000</pubDate>
       
       <guid>https://immortalwrt.github.io/opde/x86/64/package_feeds_base_rtl8192du/compile.13/</guid>
       <description>build number: 13
-re-implement command docker pull elonh/opde:sdk docker run -it --rm elonh/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/base/rtl8192du/compile -j$(nproc) || make package/feeds/base/rtl8192du/compile V=s Compile.txt Applying ./patches/010-missing-header-in-ipv6.patch using plaintext: patching file core/rtw_br_ext.c make[3]: *** No rule to make target &amp;#39;/openwrt/staging_dir/target-x86_64_musl/usr/include/mac80211-backport/backport/autoconf.h&amp;#39;, needed by &amp;#39;/openwrt/build_dir/target-x86_64_musl/linux-x86_64/rtl8192du-2019-06-01-54c95aaa/.configured_68b329da9893e34099c7d8ad5cb9c940&amp;#39;. Stop. </description>
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/base/rtl8192du/compile -j$(nproc) || make package/feeds/base/rtl8192du/compile V=s Compile.txt Applying ./patches/010-missing-header-in-ipv6.patch using plaintext: patching file core/rtw_br_ext.c Applying ./patches/020-wireless-5.8.patch using plaintext: patching file os_dep/ioctl_cfg80211.c make[3]: *** No rule to make target &amp;#39;/openwrt/staging_dir/target-x86_64_musl/usr/include/mac80211-backport/backport/autoconf.h&amp;#39;, needed by &amp;#39;/openwrt/build_dir/target-x86_64_musl/linux-x86_64/rtl8192du-2020-12-12-331ec03d/.configured_68b329da9893e34099c7d8ad5cb9c940&amp;#39;. Stop. </description>
     </item>
     
     <item>
@@ -194,11 +234,11 @@ re-implement command docker pull elonh/opde:sdk docker run -it --rm elonh/opde:s
     <item>
       <title>compile.10</title>
       <link>https://immortalwrt.github.io/opde/x86/64/package_feeds_base_rtl8192du/compile.10/</link>
-      <pubDate>Fri, 07 May 2021 12:45:54 +0000</pubDate>
+      <pubDate>Wed, 07 Jul 2021 18:06:25 +0000</pubDate>
       
       <guid>https://immortalwrt.github.io/opde/x86/64/package_feeds_base_rtl8192du/compile.10/</guid>
       <description>build number: 10
-re-implement command docker pull elonh/opde:sdk docker run -it --rm elonh/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/base/rtl8192du/compile -j$(nproc) || make package/feeds/base/rtl8192du/compile V=s Compile.txt Applying ./patches/010-missing-header-in-ipv6.patch using plaintext: patching file core/rtw_br_ext.c make[3]: *** No rule to make target &amp;#39;/openwrt/staging_dir/target-x86_64_musl/usr/include/mac80211-backport/backport/autoconf.h&amp;#39;, needed by &amp;#39;/openwrt/build_dir/target-x86_64_musl/linux-x86_64/rtl8192du-2019-06-01-54c95aaa/.configured_68b329da9893e34099c7d8ad5cb9c940&amp;#39;. Stop. </description>
+re-implement command docker pull immortalwrt/opde:sdk docker run -it --rm immortalwrt/opde:sdk zsh # or bash export http_proxy= # [your proxy], do not use localhost or 127.0.0.1 export https_proxy=$http_proxy opde feeds &amp;amp;&amp;amp; opde config -a make package/feeds/base/rtl8192du/compile -j$(nproc) || make package/feeds/base/rtl8192du/compile V=s Compile.txt Applying ./patches/010-missing-header-in-ipv6.patch using plaintext: patching file core/rtw_br_ext.c Applying ./patches/020-wireless-5.8.patch using plaintext: patching file os_dep/ioctl_cfg80211.c make[3]: *** No rule to make target &amp;#39;/openwrt/staging_dir/target-x86_64_musl/usr/include/mac80211-backport/backport/autoconf.h&amp;#39;, needed by &amp;#39;/openwrt/build_dir/target-x86_64_musl/linux-x86_64/rtl8192du-2020-12-12-331ec03d/.configured_68b329da9893e34099c7d8ad5cb9c940&amp;#39;. Stop. </description>
     </item>
     
     <item>
