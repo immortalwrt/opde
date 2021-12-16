@@ -175,8 +175,8 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - run: |-
-          tar -xf ${{steps.sdk-var2.outputs.SDK_NAME}}
-          tar -xf ${{steps.sdk-var2.outputs.IB_NAME}}
+          tar --no-same-owner -xf ${{steps.sdk-var2.outputs.SDK_NAME}}
+          tar --no-same-owner -xf ${{steps.sdk-var2.outputs.IB_NAME}}
           ls -l -h
       - name: hack docker file
         run: sed -i 's,FROM immortalwrt/opde:base,FROM immortalwrt/opde:base-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }},' Dockerfile.sdk
