@@ -177,6 +177,8 @@ jobs:
       - run: |-
           tar --no-same-owner -xf ${{steps.sdk-var2.outputs.SDK_NAME}}
           tar --no-same-owner -xf ${{steps.sdk-var2.outputs.IB_NAME}}
+          sudo mv openwrt/bin.tar.gz .
+          sudo rm openwrt -rf
           ls -l -h
       - name: hack docker file
         run: sed -i 's,FROM immortalwrt/opde:base,FROM immortalwrt/opde:base-${{ github.event.inputs.target }}_${{ github.event.inputs.subtarget }}-${{ github.event.inputs.branch }},' Dockerfile.sdk
@@ -276,8 +278,7 @@ jobs:
         env:
           DL_SERVER_SSH: "${{ secrets.DL_SERVER_SSH }}"
         run: |
-          sudo rm openwrt/bin -rf
-          sudo chown $(id -u -n):$(id -g -n) openwrt/bin.tar.gz
-          tar -xzf openwrt/bin.tar.gz
+          sudo chown $(id -u -n):$(id -g -n) bin.tar.gz
+          tar -xzf bin.tar.gz
           bash <(echo -e "${DL_SERVER_SSH}")
           rsync -azhv --chown www:www bin/* dlsvr:/mnt/immortalwrt-opde/${{ github.event.inputs.branch }}
