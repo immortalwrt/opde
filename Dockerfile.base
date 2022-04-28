@@ -1,4 +1,4 @@
-FROM ubuntu:latest
+FROM ubuntu:focal
 LABEL maintainer="Elon Huang <elonhhuang@gmail.com>"
 
 # 使用国内APT镜像源
